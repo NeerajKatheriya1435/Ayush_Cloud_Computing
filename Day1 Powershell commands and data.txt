@@ -1,0 +1,935 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\pc> ls
+
+
+    Directory: C:\Users\pc
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         28-Nov-25   6:11 PM                .anaconda
+d-----         12-Jun-26   1:49 PM                .android
+d-----         12-Mar-26   5:28 PM                .aws
+d-----         30-May-26  12:07 PM                .cagent
+d-----         22-May-26   3:36 PM                .codex
+d-----         28-Nov-25   6:11 PM                .conda
+d-----         30-May-26  12:07 PM                .config
+d-----         28-Nov-25   6:11 PM                .continuum
+d-----         24-Jul-26  10:04 AM                .copilot
+d-----         24-Jun-26  11:15 AM                .docker
+d-----         21-Jun-25   5:34 AM                .dotnet
+d-----         13-Oct-25  10:17 AM                .eclipse
+d-----         29-Dec-25   9:39 AM                .gradle
+d-----         06-Jul-26   9:56 AM                .idlerc
+d-----         06-Oct-25  10:13 AM                .ipython
+d-----         29-Jun-26   5:38 PM                .jdks
+d-----         06-Oct-25  10:30 AM                .jupyter
+d-----         15-Jun-26  10:37 AM                .kube
+d-----         13-Aug-25   4:03 PM                .m2
+d-----         08-Oct-25   6:30 PM                .matplotlib
+d-----         18-Jun-26   9:37 AM                .minikube
+d-----         19-Jun-25   3:18 PM                .ms-ad
+d-----         04-Jun-25   6:25 AM                .nuget
+d-----         30-Jan-26   2:38 PM                .openjfx
+d-----         13-Oct-25  10:24 AM                .p2
+d-----         27-Feb-26  12:31 PM                .redhat
+d-----         23-Apr-26   6:22 PM                .ssh
+d-----         21-Jun-25   5:29 AM                .templateengine
+d-----         20-Aug-25   5:22 PM                .th-client
+d-----         23-Jun-26   6:59 PM                .VirtualBox
+d-----         13-Oct-25  11:59 AM                .vscode
+d-----         31-Mar-26   6:54 PM                .vscode-R
+d-----         01-May-26   6:19 PM                .vscode-shared
+d-----         01-Apr-26   5:13 PM                .wdm
+d-r---         02-Jun-25   1:14 AM                3D Objects
+d-r---         02-Jun-25   1:14 AM                Contacts
+d-r---         02-Aug-26   2:20 PM                Desktop
+d-r---         22-Jul-26   5:47 PM                Documents
+d-r---         11-Aug-26   3:42 PM                Downloads
+d-----         13-Oct-25  10:17 AM                eclipse
+d-r---         02-Jan-26   1:06 PM                Favorites
+d-----         06-Aug-25   4:53 PM                IdeaProjects
+d-r---         02-Jun-25   1:14 AM                Links
+d-r---         02-Jun-25   1:14 AM                Music
+d-----         13-Jan-26   4:36 PM                nawazish
+d-----         06-Oct-25  10:25 AM                New Folder
+dar--l         07-Jun-25   4:18 PM                OneDrive
+d-r---         27-Jul-26   8:07 AM                Pictures
+d-r---         02-Jun-25   1:14 AM                Saved Games
+d-r---         02-Jun-25   1:15 AM                Searches
+d-----         02-Jun-25   1:06 PM                source
+d-----         26-Dec-25  12:51 PM                StudioProjects
+d-----         05-Nov-25   5:02 PM                Udit
+d-r---         30-Dec-25  12:21 PM                Videos
+d-----         23-Jun-26   6:59 PM                VirtualBox VMs
+-a----         11-Aug-26   6:11 PM          11631 .bash_history
+-a----         28-Nov-25   6:12 PM             25 .condarc
+-a----         29-Dec-25   9:31 AM             16 .emulator_console_auth_token
+-a----         10-Apr-26   6:43 PM            399 .gitconfig
+-a----         21-Aug-25   5:43 PM           2204 .h2.server.properties
+-a----         05-Jun-26   6:06 PM             20 .lesshst
+-a----         02-Jun-25   3:42 PM             14 .minttyrc
+-a----         03-Sep-25   2:38 PM             28 .node_repl_history
+-a----         29-Jun-26   9:39 AM            155 .python_history
+-a----         16-Apr-26  11:12 AM           8192 day1.db
+-a----         28-Nov-25  10:24 AM         460000 Service.json
+-a----         28-Nov-25  12:14 PM         163346 Service1.csv
+-a----         20-Aug-25   5:20 PM          20480 test.mv.db
+
+
+PS C:\Users\pc> write-host "Hello Program"
+Hello Program
+PS C:\Users\pc> Copy-Item "D:\Neeraj Notes\Cloud Computing Notes\Cloud Computing PDF Notes" -Destination "D:\Neeraj Notes\Cloud Computing Notes\goodFolder" PS C:\Users\pc> $PSVersionTable
+
+Name                           Value
+----                           -----
+PSVersion                      5.1.19041.6456
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.19041.6456
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+
+
+PS C:\Users\pc> $PSVersionTable.PSVersion
+
+Major  Minor  Build  Revision
+-----  -----  -----  --------
+5      1      19041  6456
+
+
+PS C:\Users\pc> Get-Process
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+   1011     100   329232     257512      82.61  14200   9 Acrobat
+    823      30    50620      46480      34.06  19040   9 Acrobat
+    298      15     7456      15668       0.28  13412   9 AdobeCollabSync
+    573      27    23560      35784      12.94  21332   9 AdobeCollabSync
+    171      11     2088       8408       0.25   5784   9 AdobeIPCBroker
+    236      15     3320      14460              7664   0 aesm_service
+    160       9     6720       8728              9064   0 AggregatorHost
+    494      35    32472      20048      77.03   4088   0 AnyDesk
+    383      22    20992      26564       0.28  17692   9 ApplicationFrame...
+    376      20     4604      18740              3220   0 armsvc
+    513      27   150604     106008     264.28  10040   0 audiodg
+    174      11     2560       9104       0.45   7896   9 AutoModeDetect
+    473      36    15148       1832       0.23   8376   9 CalculatorApp
+     50       4      616       2812       0.03  19392   9 CCXProcess
+    457      33    34216      60852     228.58   2460   9 chrome
+    255      22    35932      47292      22.50   5352   9 chrome
+    359      20    16088      26316     297.61   7560   9 chrome
+   1388      43   267876     183924     560.53  10028   9 chrome
+    215      17    15996      30784       0.06  10176   9 chrome
+    287      24    58468     109896      53.25  11100   9 chrome
+    255      22    24508      40472       3.97  11296   9 chrome
+    353      33   151148     223740      15.25  13180   9 chrome
+    356      28   108648     114904      10.17  13556   9 chrome
+    346      23    52612      95072       5.72  14604   9 chrome
+    275      11     7020       9328       0.17  15852   9 chrome
+    416      46   236736     297116     147.38  15996   9 chrome
+    661      72   649308     471948   3,781.69  17252   9 chrome
+    757      32   104544      57856     402.55  18048   9 chrome
+    197      14    10724      19420       1.19  19532   9 chrome
+    304      22    26388      57316       2.02  20140   9 chrome
+    231      21    20440      39208       0.14  20324   9 chrome
+   2254      81   297376     338164     585.78  21080   9 chrome
+    264      22    29796      68460       1.70  21300   9 chrome
+    226      10     9800      33848       0.05   1128   9 Code
+    608      22    98308     145668      12.81   4436   9 Code
+   1135      59   119648     144416      15.42   5776   9 Code
+    165      17    24156     105536       0.34   8832   9 Code
+    222      25   193072     207472       2.58   9072   9 Code
+    428      60   269564     287624      15.78  10560   9 Code
+    345      28    84776     121080       2.05  11120   9 Code
+    335      29   107596     132428       9.69  15408   9 Code
+    350      31   133616     132060       2.66  15548   9 Code
+    487      73   178032     164712       4.59  19724   9 Code
+    479      42   325008     374408      64.22  20204   9 Code
+    339      17    13692      50244       0.55  20424   9 Code
+    143       7     1688       8136       0.02   6488   9 CompPkgSrv
+    111       7     6352      11524       0.02    804   9 conhost
+    108       7     6228       5632              4224   0 conhost
+    133       9     6548       5792              6048   0 conhost
+    111       7     6352      11516       0.03  10808   9 conhost
+    273      14     4492      16784       4.38  10816   9 conhost
+    111       7     6352      11528       0.03  12268   9 conhost
+    111       7     6356       6112       0.02  13044   9 conhost
+    111       7     6344      11512       0.05  13560   9 conhost
+    111       7     6348      11524       0.03  14204   9 conhost
+    135      10     6712       8116       0.05  20092   9 conhost
+    357      19   102920      23712       2.81   5076   9 cpptools
+      0       2     8360       3304       0.00  16252   9 cpptools
+    151      33   101576      39784       0.73  12216   9 cpptools-srv
+    165      13    57680      21720       0.05    588   9 cpptools-srv2
+    165      13    57752      21804       0.14   3280   9 cpptools-srv2
+    165      13    57776      21856       0.27   5444   9 cpptools-srv2
+    871      27     2240       5328               796   0 csrss
+    979      36     3068       7124              9448   9 csrss
+    549      18     5412      24732      10.39  13428   9 ctfmon
+    112       8     1776       6748               608   0 dasHost
+    482      20    14196      18576              2540   0 dasHost
+    296      13     6948      10772              4100   0 DAX3API
+    212      10     2412       9740             11892   9 DAX3API
+    217      19     4340      11048              7184   0 dllhost
+    251      23     6392      14100       0.38  18888   9 dllhost
+   1424      52    88652      94084              3156   9 dwm
+    145      10     2200       8904       6.27  17292   9 E_YATIYXE
+    134       7     1884       4844              4180   0 esif_uf
+   2905     107   131936     191096      97.55   1032   9 explorer
+    200       9     1612       5456              4160   0 FMService64
+    189      13    19032      11576       0.91   2376   9 FnHotkeyCapsLKNumLK
+    369      22    42488      20124       1.50   8720   9 FnHotkeyUtility
+     50       7     1932       2568              1172   0 fontdrvhost
+     50      11     7504      13296             13852   9 fontdrvhost
+    684      15     6620      14072              4236   0 HPPrintScanDocto...
+      0       0       60          8                 0   0 Idle
+    392      33    17184      50168       0.38  16968   9 IGCC
+    655      36    50104      61080       2.08   4420   9 IGCCTray
+    212      11     2616       8692              2260   0 igfxCUIServiceN
+    304      14     4012      12996       0.78  10656   9 igfxEMN
+    138       7     1504       4368              1748   0 IntelCpHDCPSvc
+    153       8     1276       5772              5884   0 jhi_service
+    301      13    23180      10204              4400   0 LenovoUtilitySer...
+    221      11     3088       9096              4468   0 LMS
+    295      16     7648      16768              4444   0 LNBITSSvc
+    758      34    22168      63536       1.86   2104   9 LockApp
+     65       5      836       2324               604   0 LsaIso
+   2046      37    13252      28588               884   0 lsass
+      0       0     1796     528668              2740   0 Memory Compression
+    331      25   896728      48544              4532   0 mongod
+    529      21    33084      24088              2432   0 MoUsoCoreWorker
+    502      17    12116      18452             16092   0 MpDefenderCoreSe...
+    320      23    60664      63900       2.48   1444   9 msedgewebview2
+    294      21    56420      50880       0.88   1740   9 msedgewebview2
+    353      21    12244      35616       0.56   3104   9 msedgewebview2
+    294      22    57340      52316       1.02   3484   9 msedgewebview2
+   1344      47    64692     144788      29.84   3672   9 msedgewebview2
+    294      21    56268      50936       0.84   3860   9 msedgewebview2
+   1517      62    72408     112512       5.84   4056   9 msedgewebview2
+    305      22    60796      54032       1.92   4136   9 msedgewebview2
+    348      19    14768      39076       3.52   4440   9 msedgewebview2
+    198      12     9528      18972       0.17   6496   9 msedgewebview2
+    293      21    49828      51256       1.64   7576   9 msedgewebview2
+    227      10     2712       9340       0.06   7592   9 msedgewebview2
+    373      24    14088      32600       0.70   8148   9 msedgewebview2
+    190      10     2980       9312       0.08   9704   9 msedgewebview2
+    294      22    50776      51100       0.84  10496   9 msedgewebview2
+   1175      48    42952      89408       2.77  12764   9 msedgewebview2
+    462      54   306068     274620      72.77  13144   9 msedgewebview2
+    296      22    67740      56076       0.84  13936   9 msedgewebview2
+    181      10     2816      10028       0.03  14684   9 msedgewebview2
+    196      12    10460      17308       0.19  15552   9 msedgewebview2
+    207      13     9544      19272       0.17  15832   9 msedgewebview2
+    558      27    34892      50632       1.11  15964   9 msedgewebview2
+    307      23    60136      56040       2.38  18260   9 msedgewebview2
+    840      29   142916     145140      16.94  19108   9 msedgewebview2
+    303      27    70512      70392       1.52  19760   9 msedgewebview2
+    271      16     9432      21144       0.28  19836   9 msedgewebview2
+    468      21    54040      45648       1.64  20648   9 msedgewebview2
+    965     276   357156     253848             12536   0 MsMpEng
+    135      12    33892      24456              4804   0 mysqld
+    489     301   594096      42680              6028   0 mysqld
+    211      10     4964      12092               324   0 NisSrv
+    533      43    26820      53228       9.27  11176   9 node
+    709      27    40568      41224              4112   0 OfficeClickToRun
+    718      33    43924      47292              4244   0 OneApp.IGCC.WinS...
+    656      49    77392      16216      17.73  16032   9 OneDrive.Sync.Se...
+    148      10     1968       8436       0.03   4200   9 OpenConsole
+    148      10     1984       8436       0.03   4296   9 OpenConsole
+    148      10     1968       8428       0.08  11360   9 OpenConsole
+    148      10     2008       8456       0.05  14520   9 OpenConsole
+    148      10     1988       8440       0.03  16748   9 OpenConsole
+    148      10     1984       8448       0.05  16856   9 OpenConsole
+    148      10     1980       8432       0.03  16884   9 OpenConsole
+    148      10     1972       8436       0.05  18160   9 OpenConsole
+    148      10     1972       8436       0.03  20944   9 OpenConsole
+    603      29    69268      80704       2.11   2552   9 powershell
+    560      34    73904      75368       2.67   4480   9 powershell
+    575      29    70460      81460       2.20   8800   9 powershell
+    581      29    70500      81208       2.28  10892   9 powershell
+    570      29    70352      81204       2.25  11936   9 powershell
+    575      29    69088      80352       2.11  15356   9 powershell
+    570      29    70616      81584       2.23  15872   9 powershell
+    565      29    70304      81096       2.25  16344   9 powershell
+    575      29    70168      81228       2.14  16396   9 powershell
+    578      29    67840      78880       2.44  20852   9 powershell
+      0      21     9760      62176               132   0 Registry
+    147       8     1560       5660              4620   0 RstMwService
+    310      12     3040       7516              4632   0 RtkAudUService64
+    290      12     2420       9724       0.09  20064   9 RtkAudUService64
+    361      20     6188      30656       8.47   3748   9 RuntimeBroker
+    330      19     7240      28164       2.44   4288   9 RuntimeBroker
+    693      33    14612      49956       7.23   5704   9 RuntimeBroker
+    159      10     2172       9856       0.06  11636   9 RuntimeBroker
+    496      26    10400      37652       2.84  11652   9 RuntimeBroker
+    122       7     1452       6604       0.08  12448   9 RuntimeBroker
+    137       8     1864      11128       0.02  19916   9 RuntimeBroker
+    823      40    19704      73940       3.64   9108   9 SearchApp
+   2325     129   192900     122276      28.95  11312   9 SearchApp
+    152       8     1528       7612             13728   0 SearchFilterHost
+    919      77    43744      50352              5344   0 SearchIndexer
+    272      10     1912       8556       0.02  18288   9 SearchProtocolHost
+      0       0      172      33816                72   0 Secure System
+    778      18     9816      15508             11632   0 SecurityHealthSe...
+    165       9     1812       8812       0.05  15528   9 SecurityHealthSy...
+    892      15     7440      12792               476   0 services
+    670      31    21004      65420       2.38   9516   9 ShellExperienceHost
+    630      19     7344      28184       3.81  10076   9 sihost
+     53       3     1092       1160               500   0 smss
+    154       9     1508       7336              2848   0 SocketHeciServer
+    611      32    13732      25824              3888   0 spoolsv
+    583      31    41304      47880              8504   0 sqlceip
+    741      85   459768     139008              3204   0 sqlservr
+    155      10     2092       6152              4752   0 sqlwriter
+    634      31    28484      74172       2.67   6532   9 StartMenuExperie...
+    505      20    12788      20700              1072   0 svchost
+   1999      27    21644      40156              1136   0 svchost
+   1894      22    20352      22824              1308   0 svchost
+    420      13     3208       9712              1356   0 svchost
+    204      21     1992       6820              1468   0 svchost
+    214      16     2068       9744              1476   0 svchost
+    290      23     3352      11052              1484   0 svchost
+    112       9     1292       3956              1508   0 svchost
+    130       8     1632       5360              1572   0 svchost
+    254      13     2800       9080              1612   0 svchost
+   1012       9     2860      10476              1620   0 svchost
+    337      11     2776       7048              1756   0 svchost
+    142      10     1720       5108              1780   0 svchost
+    185       9     2128       6272              1792   0 svchost
+    481      13    17372      14864              1868   0 svchost
+    328      28     7312      15384              1920   0 svchost
+    461      22     7800      32624       2.64   1928   9 svchost
+    202      11     1996       6804              1936   0 svchost
+    227      14     2384       8580              2056   0 svchost
+    175      33    11968       7988              2176   0 svchost
+    250      13     3412      12964              2276   0 svchost
+    274      13     3736      10032              2284   0 svchost
+    245      13     3320      13036              2304   0 svchost
+    411      18     8380      15488              2308   0 svchost
+    135       9     1840       7984              2388   0 svchost
+    233      10     3072       6572              2424   0 svchost
+    374      11     3652      11128              2512   0 svchost
+    229      12     3148      13512              2532   0 svchost
+    331       8     1396       4588              2560   0 svchost
+    178       7     2164       4784              2668   0 svchost
+    241       9     2160       6412              2696   0 svchost
+    218      12     3336      11684              2704   0 svchost
+    404      16     6348      12248              2712   0 svchost
+    183      10     2416       7708              2752   0 svchost
+    232      12     2592       9040              2832   0 svchost
+    714      15     7976      10732              2972   0 svchost
+    195      12    14800      18908              2980   0 svchost
+    293      11     3504       8652              3112   0 svchost
+    132       8     1620       5168              3196   0 svchost
+    436      32    13512      15092              3260   0 svchost
+    465      15     4208      13456              3268   0 svchost
+    193     180     2552       6480              3380   0 svchost
+    336      15     4336       8568              3452   0 svchost
+    390      15     2940       8524              3460   0 svchost
+    157      11     1892       5156              3468   0 svchost
+    388      23    48568      38524              3520   0 svchost
+    140       9     1460       4940              3560   0 svchost
+    199      10     2448       6920              3656   0 svchost
+    616      31    27964      38604              3680   0 svchost
+    530      21     8068      17992              3760   0 svchost
+    292      16     3352       8184              3812   0 svchost
+    254      17     2772      12124              3848   0 svchost
+    184      11     2148       6528              4000   0 svchost
+    114       8     1256       4440              4076   0 svchost
+    491      18    14588      22108              4320   0 svchost
+    112       7     1280       5628              4340   0 svchost
+    206      11     2372       7800              4496   0 svchost
+    144       9     1600       4872              4672   0 svchost
+    117       7     1312       4020              4684   0 svchost
+    187      10     2156       7000              4764   0 svchost
+    144       7     1420       4144              4816   0 svchost
+    507      35    52236      30584              4860   0 svchost
+    429      20     5704      21256              4948   0 svchost
+    367      16     3124       9116              5292   0 svchost
+    216      12     2416       5684              5476   0 svchost
+    408      27     3816      11652              6016   0 svchost
+    268      13     2812      11420              6216   0 svchost
+    161      10     2192       6364              6920   0 svchost
+    283      15     4104      13236              7292   0 svchost
+    867      13    10504      24152              8016   0 svchost
+    221       9     1944       7096              8068   0 svchost
+    400      24     5488      19264              8624   0 svchost
+    238      11     2620       7328              9168   0 svchost
+    236      13     3220      10196              9372   0 svchost
+   1251      21    16136      23080              9408   0 svchost
+    183      11     2352       8424              9500   0 svchost
+    379       8     1716       7364             10624   0 svchost
+    321      17     7696      19056             10692   0 svchost
+    174      11     2240       9880             11868   0 svchost
+    395      20     8336      22400             11980   0 svchost
+    200      15     6816       9588             12320   0 svchost
+    514      23     9056      35764       2.25  13488   9 svchost
+    379      13     6880      11360             13516   0 svchost
+    452      22     6072      28376             13776   0 svchost
+    204      11     2708       9420             14364   0 svchost
+    381      18    12128      27600      12.45  16204   9 svchost
+    165       9     1800       8320       0.53  16604   9 svchost
+    123       8     1296       5612             16896   0 svchost
+    550      26     6504      23708      13.84  19476   9 svchost
+   5087       0      200       3380                 4   0 System
+    867      43    28760       2120       1.16   3876   9 SystemSettings
+    283      37     9336      18600       1.41   9960   9 taskhostw
+    578      23    13980      48312       3.95   5532   9 TextInputHost
+    126       8     1512       7604       0.08   8340   9 unsecapp
+    139       9     4744       8456              9120   0 unsecapp
+    121       8     1680       7744       0.03  17980   9 unsecapp
+    153      11     2252       9960       0.11    956   9 UserOOBEBroker
+   1590     152    69732     224788      32.84  16860   9 WhatsApp.Root
+    186      11     1868       5844               840   0 wininit
+    286      12     2700      10928             19272   9 winlogon
+    159       8     1636       7284             13848   0 wlanext
+    261      16     8656      12396              6324   0 WmiPrvSE
+    385      22     7956      19672       0.84   8536   9 WSHelper
+    459      20     5988      20280              5080   0 wslservice
+    364      16     8576      16012              1208   0 WUDFHost
+
+
+PS C:\Users\pc> Start-Process -Name notepad
+Start-Process : A parameter cannot be found that matches parameter name
+'Name'.
+At line:1 char:15
++ Start-Process -Name notepad
++               ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Start-Process], Paramete
+   rBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Co
+   mmands.StartProcessCommand
+
+PS C:\Users\pc> Start-Service -Name notepad
+Start-Service : Cannot find any service with service name 'notepad'.
+At line:1 char:1
++ Start-Service -Name notepad
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (notepad:String) [Start-Servic
+   e], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShel
+   l.Commands.StartServiceCommand
+
+PS C:\Users\pc> Stop-Process -name notepad
+PS C:\Users\pc> Start-Process -name notepad
+Start-Process : A parameter cannot be found that matches parameter name
+'name'.
+At line:1 char:15
++ Start-Process -name notepad
++               ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Start-Process], Paramete
+   rBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Co
+   mmands.StartProcessCommand
+
+PS C:\Users\pc> Start-Process -Name notepad
+Start-Process : A parameter cannot be found that matches parameter name
+'Name'.
+At line:1 char:15
++ Start-Process -Name notepad
++               ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Start-Process], Paramete
+   rBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Co
+   mmands.StartProcessCommand
+
+PS C:\Users\pc> Start-Process notepad
+PS C:\Users\pc> Stop-Process -name notepad
+PS C:\Users\pc> Get-Alias
+
+CommandType     Name                                               Version
+-----------     ----                                               -------
+Alias           % -> ForEach-Object
+Alias           ? -> Where-Object
+Alias           ac -> Add-Content
+Alias           asnp -> Add-PSSnapin
+Alias           cat -> Get-Content
+Alias           cd -> Set-Location
+Alias           CFS -> ConvertFrom-String                          3.1.0.0
+Alias           chdir -> Set-Location
+Alias           clc -> Clear-Content
+Alias           clear -> Clear-Host
+Alias           clhy -> Clear-History
+Alias           cli -> Clear-Item
+Alias           clp -> Clear-ItemProperty
+Alias           cls -> Clear-Host
+Alias           clv -> Clear-Variable
+Alias           cnsn -> Connect-PSSession
+Alias           compare -> Compare-Object
+Alias           copy -> Copy-Item
+Alias           cp -> Copy-Item
+Alias           cpi -> Copy-Item
+Alias           cpp -> Copy-ItemProperty
+Alias           curl -> Invoke-WebRequest
+Alias           cvpa -> Convert-Path
+Alias           dbp -> Disable-PSBreakpoint
+Alias           del -> Remove-Item
+Alias           diff -> Compare-Object
+Alias           dir -> Get-ChildItem
+Alias           dnsn -> Disconnect-PSSession
+Alias           ebp -> Enable-PSBreakpoint
+Alias           echo -> Write-Output
+Alias           epal -> Export-Alias
+Alias           epcsv -> Export-Csv
+Alias           epsn -> Export-PSSession
+Alias           erase -> Remove-Item
+Alias           etsn -> Enter-PSSession
+Alias           exsn -> Exit-PSSession
+Alias           fc -> Format-Custom
+Alias           fhx -> Format-Hex                                  3.1.0.0
+Alias           fl -> Format-List
+Alias           foreach -> ForEach-Object
+Alias           ft -> Format-Table
+Alias           fw -> Format-Wide
+Alias           gal -> Get-Alias
+Alias           gbp -> Get-PSBreakpoint
+Alias           gc -> Get-Content
+Alias           gcb -> Get-Clipboard                               3.1.0.0
+Alias           gci -> Get-ChildItem
+Alias           gcm -> Get-Command
+Alias           gcs -> Get-PSCallStack
+Alias           gdr -> Get-PSDrive
+Alias           ghy -> Get-History
+Alias           gi -> Get-Item
+Alias           gin -> Get-ComputerInfo                            3.1.0.0
+Alias           gjb -> Get-Job
+Alias           gl -> Get-Location
+Alias           gm -> Get-Member
+Alias           gmo -> Get-Module
+Alias           gp -> Get-ItemProperty
+Alias           gps -> Get-Process
+Alias           gpv -> Get-ItemPropertyValue
+Alias           group -> Group-Object
+Alias           gsn -> Get-PSSession
+Alias           gsnp -> Get-PSSnapin
+Alias           gsv -> Get-Service
+Alias           gtz -> Get-TimeZone                                3.1.0.0
+Alias           gu -> Get-Unique
+Alias           gv -> Get-Variable
+Alias           gwmi -> Get-WmiObject
+Alias           h -> Get-History
+Alias           history -> Get-History
+Alias           icm -> Invoke-Command
+Alias           iex -> Invoke-Expression
+Alias           ihy -> Invoke-History
+Alias           ii -> Invoke-Item
+Alias           ipal -> Import-Alias
+Alias           ipcsv -> Import-Csv
+Alias           ipmo -> Import-Module
+Alias           ipsn -> Import-PSSession
+Alias           irm -> Invoke-RestMethod
+Alias           ise -> powershell_ise.exe
+Alias           iwmi -> Invoke-WmiMethod
+Alias           iwr -> Invoke-WebRequest
+Alias           kill -> Stop-Process
+Alias           lp -> Out-Printer
+Alias           ls -> Get-ChildItem
+Alias           man -> help
+Alias           md -> mkdir
+Alias           measure -> Measure-Object
+Alias           mi -> Move-Item
+Alias           mount -> New-PSDrive
+Alias           move -> Move-Item
+Alias           mp -> Move-ItemProperty
+Alias           mv -> Move-Item
+Alias           nal -> New-Alias
+Alias           ndr -> New-PSDrive
+Alias           ni -> New-Item
+Alias           nmo -> New-Module
+Alias           npssc -> New-PSSessionConfigurationFile
+Alias           nsn -> New-PSSession
+Alias           nv -> New-Variable
+Alias           ogv -> Out-GridView
+Alias           oh -> Out-Host
+Alias           popd -> Pop-Location
+Alias           ps -> Get-Process
+Alias           pushd -> Push-Location
+Alias           pwd -> Get-Location
+Alias           r -> Invoke-History
+Alias           rbp -> Remove-PSBreakpoint
+Alias           rcjb -> Receive-Job
+Alias           rcsn -> Receive-PSSession
+Alias           rd -> Remove-Item
+Alias           rdr -> Remove-PSDrive
+Alias           ren -> Rename-Item
+Alias           ri -> Remove-Item
+Alias           rjb -> Remove-Job
+Alias           rm -> Remove-Item
+Alias           rmdir -> Remove-Item
+Alias           rmo -> Remove-Module
+Alias           rni -> Rename-Item
+Alias           rnp -> Rename-ItemProperty
+Alias           rp -> Remove-ItemProperty
+Alias           rsn -> Remove-PSSession
+Alias           rsnp -> Remove-PSSnapin
+Alias           rujb -> Resume-Job
+Alias           rv -> Remove-Variable
+Alias           rvpa -> Resolve-Path
+Alias           rwmi -> Remove-WmiObject
+Alias           sajb -> Start-Job
+Alias           sal -> Set-Alias
+Alias           saps -> Start-Process
+Alias           sasv -> Start-Service
+Alias           sbp -> Set-PSBreakpoint
+Alias           sc -> Set-Content
+Alias           scb -> Set-Clipboard                               3.1.0.0
+Alias           select -> Select-Object
+Alias           set -> Set-Variable
+Alias           shcm -> Show-Command
+Alias           si -> Set-Item
+Alias           sl -> Set-Location
+Alias           sleep -> Start-Sleep
+Alias           sls -> Select-String
+Alias           sort -> Sort-Object
+Alias           sp -> Set-ItemProperty
+Alias           spjb -> Stop-Job
+Alias           spps -> Stop-Process
+Alias           spsv -> Stop-Service
+Alias           start -> Start-Process
+Alias           stz -> Set-TimeZone                                3.1.0.0
+Alias           sujb -> Suspend-Job
+Alias           sv -> Set-Variable
+Alias           swmi -> Set-WmiInstance
+Alias           tee -> Tee-Object
+Alias           trcm -> Trace-Command
+Alias           type -> Get-Content
+Alias           wget -> Invoke-WebRequest
+Alias           where -> Where-Object
+Alias           wjb -> Wait-Job
+Alias           write -> Write-Output
+
+
+PS C:\Users\pc> ls
+
+
+    Directory: C:\Users\pc
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         28-Nov-25   6:11 PM                .anaconda
+d-----         12-Jun-26   1:49 PM                .android
+d-----         12-Mar-26   5:28 PM                .aws
+d-----         30-May-26  12:07 PM                .cagent
+d-----         22-May-26   3:36 PM                .codex
+d-----         28-Nov-25   6:11 PM                .conda
+d-----         30-May-26  12:07 PM                .config
+d-----         28-Nov-25   6:11 PM                .continuum
+d-----         24-Jul-26  10:04 AM                .copilot
+d-----         24-Jun-26  11:15 AM                .docker
+d-----         21-Jun-25   5:34 AM                .dotnet
+d-----         13-Oct-25  10:17 AM                .eclipse
+d-----         29-Dec-25   9:39 AM                .gradle
+d-----         06-Jul-26   9:56 AM                .idlerc
+d-----         06-Oct-25  10:13 AM                .ipython
+d-----         29-Jun-26   5:38 PM                .jdks
+d-----         06-Oct-25  10:30 AM                .jupyter
+d-----         15-Jun-26  10:37 AM                .kube
+d-----         13-Aug-25   4:03 PM                .m2
+d-----         08-Oct-25   6:30 PM                .matplotlib
+d-----         18-Jun-26   9:37 AM                .minikube
+d-----         19-Jun-25   3:18 PM                .ms-ad
+d-----         04-Jun-25   6:25 AM                .nuget
+d-----         30-Jan-26   2:38 PM                .openjfx
+d-----         13-Oct-25  10:24 AM                .p2
+d-----         27-Feb-26  12:31 PM                .redhat
+d-----         23-Apr-26   6:22 PM                .ssh
+d-----         21-Jun-25   5:29 AM                .templateengine
+d-----         20-Aug-25   5:22 PM                .th-client
+d-----         23-Jun-26   6:59 PM                .VirtualBox
+d-----         13-Oct-25  11:59 AM                .vscode
+d-----         31-Mar-26   6:54 PM                .vscode-R
+d-----         01-May-26   6:19 PM                .vscode-shared
+d-----         01-Apr-26   5:13 PM                .wdm
+d-r---         02-Jun-25   1:14 AM                3D Objects
+d-r---         02-Jun-25   1:14 AM                Contacts
+d-r---         02-Aug-26   2:20 PM                Desktop
+d-r---         22-Jul-26   5:47 PM                Documents
+d-r---         11-Aug-26   3:42 PM                Downloads
+d-----         13-Oct-25  10:17 AM                eclipse
+d-r---         02-Jan-26   1:06 PM                Favorites
+d-----         06-Aug-25   4:53 PM                IdeaProjects
+d-r---         02-Jun-25   1:14 AM                Links
+d-r---         02-Jun-25   1:14 AM                Music
+d-----         13-Jan-26   4:36 PM                nawazish
+d-----         06-Oct-25  10:25 AM                New Folder
+dar--l         07-Jun-25   4:18 PM                OneDrive
+d-r---         27-Jul-26   8:07 AM                Pictures
+d-r---         02-Jun-25   1:14 AM                Saved Games
+d-r---         02-Jun-25   1:15 AM                Searches
+d-----         02-Jun-25   1:06 PM                source
+d-----         26-Dec-25  12:51 PM                StudioProjects
+d-----         05-Nov-25   5:02 PM                Udit
+d-r---         30-Dec-25  12:21 PM                Videos
+d-----         23-Jun-26   6:59 PM                VirtualBox VMs
+-a----         11-Aug-26   6:11 PM          11631 .bash_history
+-a----         28-Nov-25   6:12 PM             25 .condarc
+-a----         29-Dec-25   9:31 AM             16 .emulator_console_auth_toke
+                                                  n
+-a----         10-Apr-26   6:43 PM            399 .gitconfig
+-a----         21-Aug-25   5:43 PM           2204 .h2.server.properties
+-a----         05-Jun-26   6:06 PM             20 .lesshst
+-a----         02-Jun-25   3:42 PM             14 .minttyrc
+-a----         03-Sep-25   2:38 PM             28 .node_repl_history
+-a----         29-Jun-26   9:39 AM            155 .python_history
+-a----         16-Apr-26  11:12 AM           8192 day1.db
+-a----         28-Nov-25  10:24 AM         460000 Service.json
+-a----         28-Nov-25  12:14 PM         163346 Service1.csv
+-a----         20-Aug-25   5:20 PM          20480 test.mv.db
+
+
+PS C:\Users\pc> cd .\Desktop\
+PS C:\Users\pc\Desktop> ls
+
+
+    Directory: C:\Users\pc\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         05-May-26  10:31 PM                AbhishekPDF
+d-----         21-Jul-26   1:06 PM                Cadd Mentor Images
+d-----         25-Jun-26  10:21 AM                Computer Notes Basics
+d-----         15-Jan-26  10:58 AM                Data_Science
+d-----         18-Jul-26   2:05 PM                DemoData
+d-----         27-Jun-26   5:57 PM                DemoPython
+d-----         22-Jun-26  12:36 PM                lib
+d-----         22-Jun-26   8:08 AM                Presentation Utils
+d-----         14-Jul-26   5:49 PM                Project SSVGI
+d-----         20-Jul-26   5:44 PM                Python Code
+d-----         20-Jul-26   6:56 PM                QuizApp
+-a----         18-Jul-25   1:37 PM           1042 Adobe Audition 2023.lnk
+-a----         12-Jul-25   7:11 PM           1090 Adobe Premiere Pro 2023.lnk
+-a----         01-Jan-26  11:11 AM           1141 Android Studio.lnk
+-a----         01-Jun-26  10:57 AM         142918 Attendece123Inv.xlsx
+-a----         22-Jun-26   1:54 PM          16082 Attendence Summer.xlsx
+-a----         14-May-26   3:17 PM            271 Centre Details.txt
+-a----         04-May-26   5:09 PM         495105 CerificateALl.pdf
+-a----         09-Jun-26   6:53 PM            141 delete.html
+-a----         29-May-26   4:51 PM         437895 deletePython.pdf
+-a----         13-Jun-26  11:00 AM         515171 feeStruct.pdf
+-a----         11-May-26  11:17 AM         667444 Full Stack Experienced.pdf
+-a----         10-Apr-26   6:41 PM           2397 GitHub Desktop.lnk
+-a----         28-May-26   6:14 PM           2373 MongoDB Compass.lnk
+-a----         03-Dec-25  12:58 PM           2344 Neeraj - Chrome.lnk
+-a----         30-May-26  10:58 AM          13628 New Microsoft Excel
+                                                  Worksheet.xlsx
+-a----         19-Jun-26   9:46 AM          25259 New Microsoft Word
+                                                  Document (2).docx
+-a----         25-Jun-26  11:34 AM          13214 New Microsoft Word
+                                                  Document (3).docx
+-a----         21-Jul-26   4:37 PM          26330 New Microsoft Word
+                                                  Document (4).docx
+-a----         24-Jun-26   6:26 PM          27208 New Microsoft Word
+                                                  Document.docx
+-a----         16-Jul-26   6:00 PM              2 New Text Document.txt
+-a----         02-Jun-25   1:02 PM           1381 Opera Browser.lnk
+-a----         25-May-26   4:28 PM           2310 PassKey.png
+-a----         25-Jul-26   9:39 AM          16457 ReportToday.docx
+-a----         24-Jul-26  10:40 AM          66475 SalesDataMine.xlsx
+-a----         06-Jun-25   4:59 PM           1006 ShareX.lnk
+-a----         08-Jul-25  12:06 PM           1208 Sonma Typing-Expert.lnk
+-a----         10-Jul-26  11:49 AM           8640 SSVGI Student.xlsx
+-a----         06-Jun-26   3:15 PM         417383 Student Progress Report.pdf
+-a----         22-Jun-26   1:37 PM          97272 SUMMER TRAINING
+                                                  REGISTRATION FORM.docx
+-a----         13-Oct-25   4:34 PM           1391 Visual Studio Code.lnk
+
+
+PS C:\Users\pc\Desktop> cd ..
+PS C:\Users\pc> cd .\Desktop\
+PS C:\Users\pc\Desktop> mkdir rohan
+
+
+    Directory: C:\Users\pc\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         11-Aug-26   8:39 PM                rohan
+
+
+PS C:\Users\pc\Desktop> rmdir rohan
+PS C:\Users\pc\Desktop> get-alias
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           % -> ForEach-Object
+Alias           ? -> Where-Object
+Alias           ac -> Add-Content
+Alias           asnp -> Add-PSSnapin
+Alias           cat -> Get-Content
+Alias           cd -> Set-Location
+Alias           CFS -> ConvertFrom-String                          3.1.0.0    Mic...
+Alias           chdir -> Set-Location
+Alias           clc -> Clear-Content
+Alias           clear -> Clear-Host
+Alias           clhy -> Clear-History
+Alias           cli -> Clear-Item
+Alias           clp -> Clear-ItemProperty
+Alias           cls -> Clear-Host
+Alias           clv -> Clear-Variable
+Alias           cnsn -> Connect-PSSession
+Alias           compare -> Compare-Object
+Alias           copy -> Copy-Item
+Alias           cp -> Copy-Item
+Alias           cpi -> Copy-Item
+Alias           cpp -> Copy-ItemProperty
+Alias           curl -> Invoke-WebRequest
+Alias           cvpa -> Convert-Path
+Alias           dbp -> Disable-PSBreakpoint
+Alias           del -> Remove-Item
+Alias           diff -> Compare-Object
+Alias           dir -> Get-ChildItem
+Alias           dnsn -> Disconnect-PSSession
+Alias           ebp -> Enable-PSBreakpoint
+Alias           echo -> Write-Output
+Alias           epal -> Export-Alias
+Alias           epcsv -> Export-Csv
+Alias           epsn -> Export-PSSession
+Alias           erase -> Remove-Item
+Alias           etsn -> Enter-PSSession
+Alias           exsn -> Exit-PSSession
+Alias           fc -> Format-Custom
+Alias           fhx -> Format-Hex                                  3.1.0.0    Mic...
+Alias           fl -> Format-List
+Alias           foreach -> ForEach-Object
+Alias           ft -> Format-Table
+Alias           fw -> Format-Wide
+Alias           gal -> Get-Alias
+Alias           gbp -> Get-PSBreakpoint
+Alias           gc -> Get-Content
+Alias           gcb -> Get-Clipboard                               3.1.0.0    Mic...
+Alias           gci -> Get-ChildItem
+Alias           gcm -> Get-Command
+Alias           gcs -> Get-PSCallStack
+Alias           gdr -> Get-PSDrive
+Alias           ghy -> Get-History
+Alias           gi -> Get-Item
+Alias           gin -> Get-ComputerInfo                            3.1.0.0    Mic...
+Alias           gjb -> Get-Job
+Alias           gl -> Get-Location
+Alias           gm -> Get-Member
+Alias           gmo -> Get-Module
+Alias           gp -> Get-ItemProperty
+Alias           gps -> Get-Process
+Alias           gpv -> Get-ItemPropertyValue
+Alias           group -> Group-Object
+Alias           gsn -> Get-PSSession
+Alias           gsnp -> Get-PSSnapin
+Alias           gsv -> Get-Service
+Alias           gtz -> Get-TimeZone                                3.1.0.0    Mic...
+Alias           gu -> Get-Unique
+Alias           gv -> Get-Variable
+Alias           gwmi -> Get-WmiObject
+Alias           h -> Get-History
+Alias           history -> Get-History
+Alias           icm -> Invoke-Command
+Alias           iex -> Invoke-Expression
+Alias           ihy -> Invoke-History
+Alias           ii -> Invoke-Item
+Alias           ipal -> Import-Alias
+Alias           ipcsv -> Import-Csv
+Alias           ipmo -> Import-Module
+Alias           ipsn -> Import-PSSession
+Alias           irm -> Invoke-RestMethod
+Alias           ise -> powershell_ise.exe
+Alias           iwmi -> Invoke-WmiMethod
+Alias           iwr -> Invoke-WebRequest
+Alias           kill -> Stop-Process
+Alias           lp -> Out-Printer
+Alias           ls -> Get-ChildItem
+Alias           man -> help
+Alias           md -> mkdir
+Alias           measure -> Measure-Object
+Alias           mi -> Move-Item
+Alias           mount -> New-PSDrive
+Alias           move -> Move-Item
+Alias           mp -> Move-ItemProperty
+Alias           mv -> Move-Item
+Alias           nal -> New-Alias
+Alias           ndr -> New-PSDrive
+Alias           ni -> New-Item
+Alias           nmo -> New-Module
+Alias           npssc -> New-PSSessionConfigurationFile
+Alias           nsn -> New-PSSession
+Alias           nv -> New-Variable
+Alias           ogv -> Out-GridView
+Alias           oh -> Out-Host
+Alias           popd -> Pop-Location
+Alias           ps -> Get-Process
+Alias           pushd -> Push-Location
+Alias           pwd -> Get-Location
+Alias           r -> Invoke-History
+Alias           rbp -> Remove-PSBreakpoint
+Alias           rcjb -> Receive-Job
+Alias           rcsn -> Receive-PSSession
+Alias           rd -> Remove-Item
+Alias           rdr -> Remove-PSDrive
+Alias           ren -> Rename-Item
+Alias           ri -> Remove-Item
+Alias           rjb -> Remove-Job
+Alias           rm -> Remove-Item
+Alias           rmdir -> Remove-Item
+Alias           rmo -> Remove-Module
+Alias           rni -> Rename-Item
+Alias           rnp -> Rename-ItemProperty
+Alias           rp -> Remove-ItemProperty
+Alias           rsn -> Remove-PSSession
+Alias           rsnp -> Remove-PSSnapin
+Alias           rujb -> Resume-Job
+Alias           rv -> Remove-Variable
+Alias           rvpa -> Resolve-Path
+Alias           rwmi -> Remove-WmiObject
+Alias           sajb -> Start-Job
+Alias           sal -> Set-Alias
+Alias           saps -> Start-Process
+Alias           sasv -> Start-Service
+Alias           sbp -> Set-PSBreakpoint
+Alias           sc -> Set-Content
+Alias           scb -> Set-Clipboard                               3.1.0.0    Mic...
+Alias           select -> Select-Object
+Alias           set -> Set-Variable
+Alias           shcm -> Show-Command
+Alias           si -> Set-Item
+Alias           sl -> Set-Location
+Alias           sleep -> Start-Sleep
+Alias           sls -> Select-String
+Alias           sort -> Sort-Object
+Alias           sp -> Set-ItemProperty
+Alias           spjb -> Stop-Job
+Alias           spps -> Stop-Process
+Alias           spsv -> Stop-Service
+Alias           start -> Start-Process
+Alias           stz -> Set-TimeZone                                3.1.0.0    Mic...
+Alias           sujb -> Suspend-Job
+Alias           sv -> Set-Variable
+Alias           swmi -> Set-WmiInstance
+Alias           tee -> Tee-Object
+Alias           trcm -> Trace-Command
+Alias           type -> Get-Content
+Alias           wget -> Invoke-WebRequest
+Alias           where -> Where-Object
+Alias           wjb -> Wait-Job
+Alias           write -> Write-Output
+
+
+PS C:\Users\pc\Desktop> md rohan
+
+
+    Directory: C:\Users\pc\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         11-Aug-26   8:41 PM                rohan
+
+
+PS C:\Users\pc\Desktop>
