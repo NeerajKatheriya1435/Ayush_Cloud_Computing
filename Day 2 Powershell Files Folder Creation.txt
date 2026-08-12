@@ -1,0 +1,1214 @@
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\pc> dir
+
+
+    Directory: C:\Users\pc
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         28-Nov-25   6:11 PM                .anaconda
+d-----         12-Jun-26   1:49 PM                .android
+d-----         12-Mar-26   5:28 PM                .aws
+d-----         30-May-26  12:07 PM                .cagent
+d-----         22-May-26   3:36 PM                .codex
+d-----         28-Nov-25   6:11 PM                .conda
+d-----         30-May-26  12:07 PM                .config
+d-----         28-Nov-25   6:11 PM                .continuum
+d-----         24-Jul-26  10:04 AM                .copilot
+d-----         24-Jun-26  11:15 AM                .docker
+d-----         21-Jun-25   5:34 AM                .dotnet
+d-----         13-Oct-25  10:17 AM                .eclipse
+d-----         29-Dec-25   9:39 AM                .gradle
+d-----         06-Jul-26   9:56 AM                .idlerc
+d-----         06-Oct-25  10:13 AM                .ipython
+d-----         29-Jun-26   5:38 PM                .jdks
+d-----         06-Oct-25  10:30 AM                .jupyter
+d-----         15-Jun-26  10:37 AM                .kube
+d-----         13-Aug-25   4:03 PM                .m2
+d-----         08-Oct-25   6:30 PM                .matplotlib
+d-----         18-Jun-26   9:37 AM                .minikube
+d-----         19-Jun-25   3:18 PM                .ms-ad
+d-----         04-Jun-25   6:25 AM                .nuget
+d-----         30-Jan-26   2:38 PM                .openjfx
+d-----         13-Oct-25  10:24 AM                .p2
+d-----         27-Feb-26  12:31 PM                .redhat
+d-----         23-Apr-26   6:22 PM                .ssh
+d-----         21-Jun-25   5:29 AM                .templateengine
+d-----         20-Aug-25   5:22 PM                .th-client
+d-----         23-Jun-26   6:59 PM                .VirtualBox
+d-----         13-Oct-25  11:59 AM                .vscode
+d-----         31-Mar-26   6:54 PM                .vscode-R
+d-----         01-May-26   6:19 PM                .vscode-shared
+d-----         01-Apr-26   5:13 PM                .wdm
+d-r---         02-Jun-25   1:14 AM                3D Objects
+d-r---         02-Jun-25   1:14 AM                Contacts
+d-r---         12-Aug-26   2:49 PM                Desktop
+d-r---         22-Jul-26   5:47 PM                Documents
+d-r---         11-Aug-26   3:42 PM                Downloads
+d-----         13-Oct-25  10:17 AM                eclipse
+d-r---         02-Jan-26   1:06 PM                Favorites
+d-----         06-Aug-25   4:53 PM                IdeaProjects
+d-r---         02-Jun-25   1:14 AM                Links
+d-r---         02-Jun-25   1:14 AM                Music
+d-----         13-Jan-26   4:36 PM                nawazish
+d-----         06-Oct-25  10:25 AM                New Folder
+dar--l         07-Jun-25   4:18 PM                OneDrive
+d-r---         27-Jul-26   8:07 AM                Pictures
+d-r---         02-Jun-25   1:14 AM                Saved Games
+d-r---         02-Jun-25   1:15 AM                Searches
+d-----         02-Jun-25   1:06 PM                source
+d-----         26-Dec-25  12:51 PM                StudioProjects
+d-----         05-Nov-25   5:02 PM                Udit
+d-r---         30-Dec-25  12:21 PM                Videos
+d-----         23-Jun-26   6:59 PM                VirtualBox VMs
+-a----         12-Aug-26   6:06 PM          11512 .bash_history
+-a----         28-Nov-25   6:12 PM             25 .condarc
+-a----         29-Dec-25   9:31 AM             16 .emulator_console_auth_token
+-a----         10-Apr-26   6:43 PM            399 .gitconfig
+-a----         21-Aug-25   5:43 PM           2204 .h2.server.properties
+-a----         05-Jun-26   6:06 PM             20 .lesshst
+-a----         02-Jun-25   3:42 PM             14 .minttyrc
+-a----         03-Sep-25   2:38 PM             28 .node_repl_history
+-a----         29-Jun-26   9:39 AM            155 .python_history
+-a----         16-Apr-26  11:12 AM           8192 day1.db
+-a----         28-Nov-25  10:24 AM         460000 Service.json
+-a----         28-Nov-25  12:14 PM         163346 Service1.csv
+-a----         20-Aug-25   5:20 PM          20480 test.mv.db
+
+
+PS C:\Users\pc> ls
+
+
+    Directory: C:\Users\pc
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         28-Nov-25   6:11 PM                .anaconda
+d-----         12-Jun-26   1:49 PM                .android
+d-----         12-Mar-26   5:28 PM                .aws
+d-----         30-May-26  12:07 PM                .cagent
+d-----         22-May-26   3:36 PM                .codex
+d-----         28-Nov-25   6:11 PM                .conda
+d-----         30-May-26  12:07 PM                .config
+d-----         28-Nov-25   6:11 PM                .continuum
+d-----         24-Jul-26  10:04 AM                .copilot
+d-----         24-Jun-26  11:15 AM                .docker
+d-----         21-Jun-25   5:34 AM                .dotnet
+d-----         13-Oct-25  10:17 AM                .eclipse
+d-----         29-Dec-25   9:39 AM                .gradle
+d-----         06-Jul-26   9:56 AM                .idlerc
+d-----         06-Oct-25  10:13 AM                .ipython
+d-----         29-Jun-26   5:38 PM                .jdks
+d-----         06-Oct-25  10:30 AM                .jupyter
+d-----         15-Jun-26  10:37 AM                .kube
+d-----         13-Aug-25   4:03 PM                .m2
+d-----         08-Oct-25   6:30 PM                .matplotlib
+d-----         18-Jun-26   9:37 AM                .minikube
+d-----         19-Jun-25   3:18 PM                .ms-ad
+d-----         04-Jun-25   6:25 AM                .nuget
+d-----         30-Jan-26   2:38 PM                .openjfx
+d-----         13-Oct-25  10:24 AM                .p2
+d-----         27-Feb-26  12:31 PM                .redhat
+d-----         23-Apr-26   6:22 PM                .ssh
+d-----         21-Jun-25   5:29 AM                .templateengine
+d-----         20-Aug-25   5:22 PM                .th-client
+d-----         23-Jun-26   6:59 PM                .VirtualBox
+d-----         13-Oct-25  11:59 AM                .vscode
+d-----         31-Mar-26   6:54 PM                .vscode-R
+d-----         01-May-26   6:19 PM                .vscode-shared
+d-----         01-Apr-26   5:13 PM                .wdm
+d-r---         02-Jun-25   1:14 AM                3D Objects
+d-r---         02-Jun-25   1:14 AM                Contacts
+d-r---         12-Aug-26   2:49 PM                Desktop
+d-r---         22-Jul-26   5:47 PM                Documents
+d-r---         11-Aug-26   3:42 PM                Downloads
+d-----         13-Oct-25  10:17 AM                eclipse
+d-r---         02-Jan-26   1:06 PM                Favorites
+d-----         06-Aug-25   4:53 PM                IdeaProjects
+d-r---         02-Jun-25   1:14 AM                Links
+d-r---         02-Jun-25   1:14 AM                Music
+d-----         13-Jan-26   4:36 PM                nawazish
+d-----         06-Oct-25  10:25 AM                New Folder
+dar--l         07-Jun-25   4:18 PM                OneDrive
+d-r---         27-Jul-26   8:07 AM                Pictures
+d-r---         02-Jun-25   1:14 AM                Saved Games
+d-r---         02-Jun-25   1:15 AM                Searches
+d-----         02-Jun-25   1:06 PM                source
+d-----         26-Dec-25  12:51 PM                StudioProjects
+d-----         05-Nov-25   5:02 PM                Udit
+d-r---         30-Dec-25  12:21 PM                Videos
+d-----         23-Jun-26   6:59 PM                VirtualBox VMs
+-a----         12-Aug-26   6:06 PM          11512 .bash_history
+-a----         28-Nov-25   6:12 PM             25 .condarc
+-a----         29-Dec-25   9:31 AM             16 .emulator_console_auth_token
+-a----         10-Apr-26   6:43 PM            399 .gitconfig
+-a----         21-Aug-25   5:43 PM           2204 .h2.server.properties
+-a----         05-Jun-26   6:06 PM             20 .lesshst
+-a----         02-Jun-25   3:42 PM             14 .minttyrc
+-a----         03-Sep-25   2:38 PM             28 .node_repl_history
+-a----         29-Jun-26   9:39 AM            155 .python_history
+-a----         16-Apr-26  11:12 AM           8192 day1.db
+-a----         28-Nov-25  10:24 AM         460000 Service.json
+-a----         28-Nov-25  12:14 PM         163346 Service1.csv
+-a----         20-Aug-25   5:20 PM          20480 test.mv.db
+
+
+PS C:\Users\pc> Get-ChildItem
+
+
+    Directory: C:\Users\pc
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         28-Nov-25   6:11 PM                .anaconda
+d-----         12-Jun-26   1:49 PM                .android
+d-----         12-Mar-26   5:28 PM                .aws
+d-----         30-May-26  12:07 PM                .cagent
+d-----         22-May-26   3:36 PM                .codex
+d-----         28-Nov-25   6:11 PM                .conda
+d-----         30-May-26  12:07 PM                .config
+d-----         28-Nov-25   6:11 PM                .continuum
+d-----         24-Jul-26  10:04 AM                .copilot
+d-----         24-Jun-26  11:15 AM                .docker
+d-----         21-Jun-25   5:34 AM                .dotnet
+d-----         13-Oct-25  10:17 AM                .eclipse
+d-----         29-Dec-25   9:39 AM                .gradle
+d-----         06-Jul-26   9:56 AM                .idlerc
+d-----         06-Oct-25  10:13 AM                .ipython
+d-----         29-Jun-26   5:38 PM                .jdks
+d-----         06-Oct-25  10:30 AM                .jupyter
+d-----         15-Jun-26  10:37 AM                .kube
+d-----         13-Aug-25   4:03 PM                .m2
+d-----         08-Oct-25   6:30 PM                .matplotlib
+d-----         18-Jun-26   9:37 AM                .minikube
+d-----         19-Jun-25   3:18 PM                .ms-ad
+d-----         04-Jun-25   6:25 AM                .nuget
+d-----         30-Jan-26   2:38 PM                .openjfx
+d-----         13-Oct-25  10:24 AM                .p2
+d-----         27-Feb-26  12:31 PM                .redhat
+d-----         23-Apr-26   6:22 PM                .ssh
+d-----         21-Jun-25   5:29 AM                .templateengine
+d-----         20-Aug-25   5:22 PM                .th-client
+d-----         23-Jun-26   6:59 PM                .VirtualBox
+d-----         13-Oct-25  11:59 AM                .vscode
+d-----         31-Mar-26   6:54 PM                .vscode-R
+d-----         01-May-26   6:19 PM                .vscode-shared
+d-----         01-Apr-26   5:13 PM                .wdm
+d-r---         02-Jun-25   1:14 AM                3D Objects
+d-r---         02-Jun-25   1:14 AM                Contacts
+d-r---         12-Aug-26   2:49 PM                Desktop
+d-r---         22-Jul-26   5:47 PM                Documents
+d-r---         11-Aug-26   3:42 PM                Downloads
+d-----         13-Oct-25  10:17 AM                eclipse
+d-r---         02-Jan-26   1:06 PM                Favorites
+d-----         06-Aug-25   4:53 PM                IdeaProjects
+d-r---         02-Jun-25   1:14 AM                Links
+d-r---         02-Jun-25   1:14 AM                Music
+d-----         13-Jan-26   4:36 PM                nawazish
+d-----         06-Oct-25  10:25 AM                New Folder
+dar--l         07-Jun-25   4:18 PM                OneDrive
+d-r---         27-Jul-26   8:07 AM                Pictures
+d-r---         02-Jun-25   1:14 AM                Saved Games
+d-r---         02-Jun-25   1:15 AM                Searches
+d-----         02-Jun-25   1:06 PM                source
+d-----         26-Dec-25  12:51 PM                StudioProjects
+d-----         05-Nov-25   5:02 PM                Udit
+d-r---         30-Dec-25  12:21 PM                Videos
+d-----         23-Jun-26   6:59 PM                VirtualBox VMs
+-a----         12-Aug-26   6:06 PM          11512 .bash_history
+-a----         28-Nov-25   6:12 PM             25 .condarc
+-a----         29-Dec-25   9:31 AM             16 .emulator_console_auth_token
+-a----         10-Apr-26   6:43 PM            399 .gitconfig
+-a----         21-Aug-25   5:43 PM           2204 .h2.server.properties
+-a----         05-Jun-26   6:06 PM             20 .lesshst
+-a----         02-Jun-25   3:42 PM             14 .minttyrc
+-a----         03-Sep-25   2:38 PM             28 .node_repl_history
+-a----         29-Jun-26   9:39 AM            155 .python_history
+-a----         16-Apr-26  11:12 AM           8192 day1.db
+-a----         28-Nov-25  10:24 AM         460000 Service.json
+-a----         28-Nov-25  12:14 PM         163346 Service1.csv
+-a----         20-Aug-25   5:20 PM          20480 test.mv.db
+
+
+PS C:\Users\pc> ls
+
+
+    Directory: C:\Users\pc
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         28-Nov-25   6:11 PM                .anaconda
+d-----         12-Jun-26   1:49 PM                .android
+d-----         12-Mar-26   5:28 PM                .aws
+d-----         30-May-26  12:07 PM                .cagent
+d-----         22-May-26   3:36 PM                .codex
+d-----         28-Nov-25   6:11 PM                .conda
+d-----         30-May-26  12:07 PM                .config
+d-----         28-Nov-25   6:11 PM                .continuum
+d-----         24-Jul-26  10:04 AM                .copilot
+d-----         24-Jun-26  11:15 AM                .docker
+d-----         21-Jun-25   5:34 AM                .dotnet
+d-----         13-Oct-25  10:17 AM                .eclipse
+d-----         29-Dec-25   9:39 AM                .gradle
+d-----         06-Jul-26   9:56 AM                .idlerc
+d-----         06-Oct-25  10:13 AM                .ipython
+d-----         29-Jun-26   5:38 PM                .jdks
+d-----         06-Oct-25  10:30 AM                .jupyter
+d-----         15-Jun-26  10:37 AM                .kube
+d-----         13-Aug-25   4:03 PM                .m2
+d-----         08-Oct-25   6:30 PM                .matplotlib
+d-----         18-Jun-26   9:37 AM                .minikube
+d-----         19-Jun-25   3:18 PM                .ms-ad
+d-----         04-Jun-25   6:25 AM                .nuget
+d-----         30-Jan-26   2:38 PM                .openjfx
+d-----         13-Oct-25  10:24 AM                .p2
+d-----         27-Feb-26  12:31 PM                .redhat
+d-----         23-Apr-26   6:22 PM                .ssh
+d-----         21-Jun-25   5:29 AM                .templateengine
+d-----         20-Aug-25   5:22 PM                .th-client
+d-----         23-Jun-26   6:59 PM                .VirtualBox
+d-----         13-Oct-25  11:59 AM                .vscode
+d-----         31-Mar-26   6:54 PM                .vscode-R
+d-----         01-May-26   6:19 PM                .vscode-shared
+d-----         01-Apr-26   5:13 PM                .wdm
+d-r---         02-Jun-25   1:14 AM                3D Objects
+d-r---         02-Jun-25   1:14 AM                Contacts
+d-r---         12-Aug-26   2:49 PM                Desktop
+d-r---         22-Jul-26   5:47 PM                Documents
+d-r---         11-Aug-26   3:42 PM                Downloads
+d-----         13-Oct-25  10:17 AM                eclipse
+d-r---         02-Jan-26   1:06 PM                Favorites
+d-----         06-Aug-25   4:53 PM                IdeaProjects
+d-r---         02-Jun-25   1:14 AM                Links
+d-r---         02-Jun-25   1:14 AM                Music
+d-----         13-Jan-26   4:36 PM                nawazish
+d-----         06-Oct-25  10:25 AM                New Folder
+dar--l         07-Jun-25   4:18 PM                OneDrive
+d-r---         27-Jul-26   8:07 AM                Pictures
+d-r---         02-Jun-25   1:14 AM                Saved Games
+d-r---         02-Jun-25   1:15 AM                Searches
+d-----         02-Jun-25   1:06 PM                source
+d-----         26-Dec-25  12:51 PM                StudioProjects
+d-----         05-Nov-25   5:02 PM                Udit
+d-r---         30-Dec-25  12:21 PM                Videos
+d-----         23-Jun-26   6:59 PM                VirtualBox VMs
+-a----         12-Aug-26   6:06 PM          11512 .bash_history
+-a----         28-Nov-25   6:12 PM             25 .condarc
+-a----         29-Dec-25   9:31 AM             16 .emulator_console_auth_token
+-a----         10-Apr-26   6:43 PM            399 .gitconfig
+-a----         21-Aug-25   5:43 PM           2204 .h2.server.properties
+-a----         05-Jun-26   6:06 PM             20 .lesshst
+-a----         02-Jun-25   3:42 PM             14 .minttyrc
+-a----         03-Sep-25   2:38 PM             28 .node_repl_history
+-a----         29-Jun-26   9:39 AM            155 .python_history
+-a----         16-Apr-26  11:12 AM           8192 day1.db
+-a----         28-Nov-25  10:24 AM         460000 Service.json
+-a----         28-Nov-25  12:14 PM         163346 Service1.csv
+-a----         20-Aug-25   5:20 PM          20480 test.mv.db
+
+
+PS C:\Users\pc> Get-Alias
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           % -> ForEach-Object
+Alias           ? -> Where-Object
+Alias           ac -> Add-Content
+Alias           asnp -> Add-PSSnapin
+Alias           cat -> Get-Content
+Alias           cd -> Set-Location
+Alias           CFS -> ConvertFrom-String                          3.1.0.0    Mic...
+Alias           chdir -> Set-Location
+Alias           clc -> Clear-Content
+Alias           clear -> Clear-Host
+Alias           clhy -> Clear-History
+Alias           cli -> Clear-Item
+Alias           clp -> Clear-ItemProperty
+Alias           cls -> Clear-Host
+Alias           clv -> Clear-Variable
+Alias           cnsn -> Connect-PSSession
+Alias           compare -> Compare-Object
+Alias           copy -> Copy-Item
+Alias           cp -> Copy-Item
+Alias           cpi -> Copy-Item
+Alias           cpp -> Copy-ItemProperty
+Alias           curl -> Invoke-WebRequest
+Alias           cvpa -> Convert-Path
+Alias           dbp -> Disable-PSBreakpoint
+Alias           del -> Remove-Item
+Alias           diff -> Compare-Object
+Alias           dir -> Get-ChildItem
+Alias           dnsn -> Disconnect-PSSession
+Alias           ebp -> Enable-PSBreakpoint
+Alias           echo -> Write-Output
+Alias           epal -> Export-Alias
+Alias           epcsv -> Export-Csv
+Alias           epsn -> Export-PSSession
+Alias           erase -> Remove-Item
+Alias           etsn -> Enter-PSSession
+Alias           exsn -> Exit-PSSession
+Alias           fc -> Format-Custom
+Alias           fhx -> Format-Hex                                  3.1.0.0    Mic...
+Alias           fl -> Format-List
+Alias           foreach -> ForEach-Object
+Alias           ft -> Format-Table
+Alias           fw -> Format-Wide
+Alias           gal -> Get-Alias
+Alias           gbp -> Get-PSBreakpoint
+Alias           gc -> Get-Content
+Alias           gcb -> Get-Clipboard                               3.1.0.0    Mic...
+Alias           gci -> Get-ChildItem
+Alias           gcm -> Get-Command
+Alias           gcs -> Get-PSCallStack
+Alias           gdr -> Get-PSDrive
+Alias           ghy -> Get-History
+Alias           gi -> Get-Item
+Alias           gin -> Get-ComputerInfo                            3.1.0.0    Mic...
+Alias           gjb -> Get-Job
+Alias           gl -> Get-Location
+Alias           gm -> Get-Member
+Alias           gmo -> Get-Module
+Alias           gp -> Get-ItemProperty
+Alias           gps -> Get-Process
+Alias           gpv -> Get-ItemPropertyValue
+Alias           group -> Group-Object
+Alias           gsn -> Get-PSSession
+Alias           gsnp -> Get-PSSnapin
+Alias           gsv -> Get-Service
+Alias           gtz -> Get-TimeZone                                3.1.0.0    Mic...
+Alias           gu -> Get-Unique
+Alias           gv -> Get-Variable
+Alias           gwmi -> Get-WmiObject
+Alias           h -> Get-History
+Alias           history -> Get-History
+Alias           icm -> Invoke-Command
+Alias           iex -> Invoke-Expression
+Alias           ihy -> Invoke-History
+Alias           ii -> Invoke-Item
+Alias           ipal -> Import-Alias
+Alias           ipcsv -> Import-Csv
+Alias           ipmo -> Import-Module
+Alias           ipsn -> Import-PSSession
+Alias           irm -> Invoke-RestMethod
+Alias           ise -> powershell_ise.exe
+Alias           iwmi -> Invoke-WmiMethod
+Alias           iwr -> Invoke-WebRequest
+Alias           kill -> Stop-Process
+Alias           lp -> Out-Printer
+Alias           ls -> Get-ChildItem
+Alias           man -> help
+Alias           md -> mkdir
+Alias           measure -> Measure-Object
+Alias           mi -> Move-Item
+Alias           mount -> New-PSDrive
+Alias           move -> Move-Item
+Alias           mp -> Move-ItemProperty
+Alias           mv -> Move-Item
+Alias           nal -> New-Alias
+Alias           ndr -> New-PSDrive
+Alias           ni -> New-Item
+Alias           nmo -> New-Module
+Alias           npssc -> New-PSSessionConfigurationFile
+Alias           nsn -> New-PSSession
+Alias           nv -> New-Variable
+Alias           ogv -> Out-GridView
+Alias           oh -> Out-Host
+Alias           popd -> Pop-Location
+Alias           ps -> Get-Process
+Alias           pushd -> Push-Location
+Alias           pwd -> Get-Location
+Alias           r -> Invoke-History
+Alias           rbp -> Remove-PSBreakpoint
+Alias           rcjb -> Receive-Job
+Alias           rcsn -> Receive-PSSession
+Alias           rd -> Remove-Item
+Alias           rdr -> Remove-PSDrive
+Alias           ren -> Rename-Item
+Alias           ri -> Remove-Item
+Alias           rjb -> Remove-Job
+Alias           rm -> Remove-Item
+Alias           rmdir -> Remove-Item
+Alias           rmo -> Remove-Module
+Alias           rni -> Rename-Item
+Alias           rnp -> Rename-ItemProperty
+Alias           rp -> Remove-ItemProperty
+Alias           rsn -> Remove-PSSession
+Alias           rsnp -> Remove-PSSnapin
+Alias           rujb -> Resume-Job
+Alias           rv -> Remove-Variable
+Alias           rvpa -> Resolve-Path
+Alias           rwmi -> Remove-WmiObject
+Alias           sajb -> Start-Job
+Alias           sal -> Set-Alias
+Alias           saps -> Start-Process
+Alias           sasv -> Start-Service
+Alias           sbp -> Set-PSBreakpoint
+Alias           sc -> Set-Content
+Alias           scb -> Set-Clipboard                               3.1.0.0    Mic...
+Alias           select -> Select-Object
+Alias           set -> Set-Variable
+Alias           shcm -> Show-Command
+Alias           si -> Set-Item
+Alias           sl -> Set-Location
+Alias           sleep -> Start-Sleep
+Alias           sls -> Select-String
+Alias           sort -> Sort-Object
+Alias           sp -> Set-ItemProperty
+Alias           spjb -> Stop-Job
+Alias           spps -> Stop-Process
+Alias           spsv -> Stop-Service
+Alias           start -> Start-Process
+Alias           stz -> Set-TimeZone                                3.1.0.0    Mic...
+Alias           sujb -> Suspend-Job
+Alias           sv -> Set-Variable
+Alias           swmi -> Set-WmiInstance
+Alias           tee -> Tee-Object
+Alias           trcm -> Trace-Command
+Alias           type -> Get-Content
+Alias           wget -> Invoke-WebRequest
+Alias           where -> Where-Object
+Alias           wjb -> Wait-Job
+Alias           write -> Write-Output
+
+
+PS C:\Users\pc> ps
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    816      79   280568     329640      21.22  14228  15 Acrobat
+    822      30    50160      48000       4.81  21028  15 Acrobat
+    583      26    23456      39508       7.89  15340  15 AdobeCollabSync
+    309      15     7640      16108       0.20  20556  15 AdobeCollabSync
+    171      11     2152       8440       0.14  13620  15 AdobeIPCBroker
+    236      15     3320      14688              7664   0 aesm_service
+    162       9     7116       8852              9064   0 AggregatorHost
+    494      37    33240      42496     101.45   4088   0 AnyDesk
+    384      22    19532      26616       0.20  16676  15 ApplicationFrameHost
+    380      21     4740      18720              3220   0 armsvc
+    509      27   150884     110200      80.22  19652   0 audiodg
+    184      12     3284      10648       0.22   2588  15 AutoModeDetect
+    473      36    15092       1784       0.20  19176  15 CalculatorApp
+     50       4      620       2816       0.00  21144  15 CCXProcess
+    448      32    35308      60488      94.59    984  15 chrome
+    275      11     7008       9380       0.09   3168  15 chrome
+    631      90   439536     475084      72.27   5288  15 chrome
+    255      22    33088      53180       4.05   5496  15 chrome
+    214      14    14116      18384       0.53   7036  15 chrome
+   1377      41   256268     214252     335.31   8384  15 chrome
+    359      20    16096      27856      92.50  10104  15 chrome
+   2265      76   310596     394496     939.34  10332  15 chrome
+    255      22    31908      46308       7.11  10824  15 chrome
+    209      17    21136      32880       0.06  12836  15 chrome
+    322      30    81304     148896     378.84  13924  15 chrome
+    254      23    25260      51280      15.27  14312  15 chrome
+    709      73   774276     701596   1,087.75  15332  15 chrome
+    237      21    28092      34952       0.78  15408  15 chrome
+    231      21    19936      37312       0.14  16768  15 chrome
+    758      33   104460      69800     137.38  16832  15 chrome
+    194      13    10672      19480       0.83  17092  15 chrome
+    250      23    46776      69712       0.56  20016  15 chrome
+    310      22    51188     100836       5.31  20084  15 chrome
+    145       7     1732       8148       0.17  18640  15 CompPkgSrv
+    108       7     6228       5656              4224   0 conhost
+    133       9     6540       7600              6608   0 conhost
+    111       7     6368       6100       0.03   7104  15 conhost
+    135      10     6716       8244       0.05  17620  15 conhost
+    275      14     5836      18192       3.59  18468  15 conhost
+    877      28     2304       5692               796   0 csrss
+    872      31     3152       7280             11116  15 csrss
+    539      18     5260      24756       9.97  15832  15 ctfmon
+    112       8     1844       6792               608   0 dasHost
+    511      20    17932      18980              2540   0 dasHost
+    341      14     7324      11680              4100   0 DAX3API
+    218      10     2416      10764             16800  15 DAX3API
+    217      19     4340      11152              7184   0 dllhost
+    248      22     5724      14124       0.48  11468  15 dllhost
+   1347      52    89124     102468             10016  15 dwm
+    147      11     2284       9000       5.17  18044  15 E_YATIYXE
+    130       9     2076       9456              1524   0 elevation_service
+    136       7     1912       4880              4180   0 esif_uf
+   2684     102   125472     193928      65.80   8900  15 explorer
+    200       9     1612       5832              4160   0 FMService64
+    189      13    19176      11616       0.97  19500  15 FnHotkeyCapsLKNumLK
+    369      22    42176      20716       1.59   7848  15 FnHotkeyUtility
+     50       7     2008       2656              1172   0 fontdrvhost
+     50      11     5108      10772             12048  15 fontdrvhost
+    916      15     7444      16092              4236   0 HPPrintScanDoctorService
+      0       0       60          8                 0   0 Idle
+    394      33    17128      50016       0.23  18416  15 IGCC
+    503      36    51724      63868       1.50  13208  15 IGCCTray
+    212      11     2720       8884              2260   0 igfxCUIServiceN
+    301      14     3784      12988       0.72  13032  15 igfxEMN
+    138       7     1504       4356              1748   0 IntelCpHDCPSvc
+    153       8     1276       5980              5884   0 jhi_service
+    337      13    24004      11620              4400   0 LenovoUtilityService
+    221      11     3088       9152              4468   0 LMS
+    305      16     8112      17128              4444   0 LNBITSSvc
+    758      34    21628      63248       1.44  15780  15 LockApp
+     65       5      836       2320               604   0 LsaIso
+   2037      40    14492      29792               884   0 lsass
+      0       0     1888     295336              2740   0 Memory Compression
+    331      25   896728      48560              4532   0 mongod
+    601      21    37016      42252              2432   0 MoUsoCoreWorker
+    515      18    12284      22340             16092   0 MpDefenderCoreService
+    425      26    95640     139332       6.84    152  15 msedge
+    192      12     8880      17328       0.06  10416  15 msedge
+    196      12     9508      20164       0.16  11600  15 msedge
+   1571      52    66840     162416       7.95  12164  15 msedge
+    184      10     2756      10548       0.03  12712  15 msedge
+    339      21    73592      84504       0.67  13108  15 msedge
+    373      24    16336      42792       1.77  14840  15 msedge
+    215      17    18468      31024       0.20  19776  15 msedge
+   1219      49    45484      91880       4.64   1352  15 msedgewebview2
+    265      15     9360       4176       0.23   1844  15 msedgewebview2
+    294      21    56344      84648       0.84   2732  15 msedgewebview2
+    290      26    66784     107392       1.19   4544  15 msedgewebview2
+    233      13     9348      17752       0.13   5272  15 msedgewebview2
+    340      19    14912      21108       3.88   6252  15 msedgewebview2
+    191      12     9320       5072       0.23   7052  15 msedgewebview2
+    293      21    55324      86040       1.58   8180  15 msedgewebview2
+    306      21    58956      91472       2.11  10388  15 msedgewebview2
+    525      28   156084      76964      21.91  11084  15 msedgewebview2
+    296      22    67296     101004       0.80  13272  15 msedgewebview2
+    445      52   299108     244116      69.08  13888  15 msedgewebview2
+   1475      58    68092     152412       4.25  14504  15 msedgewebview2
+    220      10     2708      10500       0.05  15616  15 msedgewebview2
+    526      26    31532      59868       0.80  15776  15 msedgewebview2
+    195      12    11160      17496       0.38  16508  15 msedgewebview2
+    181      10     2764      10192       0.03  16892  15 msedgewebview2
+    294      21    50660      81472       0.80  17732  15 msedgewebview2
+   1310      46    69120      81012      25.20  17888  15 msedgewebview2
+    294      21    51708      81448       0.88  18900  15 msedgewebview2
+    370      23    12360      38348       0.45  18908  15 msedgewebview2
+    365      21    14500      33720       2.23  19812  15 msedgewebview2
+    195      10     2904       9344       0.08  20300  15 msedgewebview2
+    864      28   143332     100964      16.30  21120  15 msedgewebview2
+    206      13     9576      21392       0.13  21268  15 msedgewebview2
+    744      25    95216      62140       9.72  21308  15 msedgewebview2
+    294      22    57464      89664       1.09  21388  15 msedgewebview2
+   1052     278   380244     266060             12536   0 MsMpEng
+    488     286   592672      80964              7084   0 mysqld
+    129      12    33852      27228             14924   0 mysqld
+    215      11     5360      12484               324   0 NisSrv
+    538      41    27108      53652       6.45   4024  15 node
+    719      27    40632      41388              4112   0 OfficeClickToRun
+    812      33    43756      46988              4244   0 OneApp.IGCC.WinService
+    886      84    45416     123356       1.97  10228  15 PhoneExperienceHost
+    668      34    74056      91524       2.45  16352  15 powershell
+      0      22    10528      70108               132   0 Registry
+    147       8     1560       5856              4620   0 RstMwService
+    290      12     2360      10332       0.13   2160  15 RtkAudUService64
+    310      12     2692       8024              4632   0 RtkAudUService64
+    159      10     2272       9872       0.03  11308  15 RuntimeBroker
+    317      17     5984      23144       0.31  11716  15 RuntimeBroker
+    122       7     1448       6620       0.08  14780  15 RuntimeBroker
+    648      31    13828      45948       5.20  17036  15 RuntimeBroker
+    325      19     6524      28324       2.64  19464  15 RuntimeBroker
+    365      20     5364      27856       2.88  19908  15 RuntimeBroker
+    501      26    10420      37620       2.17  20440  15 RuntimeBroker
+   2107     128   176416     121624      23.22  18944  15 SearchApp
+    834      41    21320      74136       4.25  19592  15 SearchApp
+    152       8     1516       7608             17392   0 SearchFilterHost
+    918      77    46164      52620              5344   0 SearchIndexer
+    276      10     1944       8860       0.08  16336  15 SearchProtocolHost
+      0       0      172      34200                72   0 Secure System
+   1063      20    11296      20208             11632   0 SecurityHealthService
+    173      10     1996       9548       0.05  11796  15 SecurityHealthSystray
+    896      15     7552      14244               476   0 services
+    840      37    32244      69612       3.03  20808  15 ShellExperienceHost
+    644      19     7088      28456       5.45  15400  15 sihost
+     53       3     1092       1160               500   0 smss
+    154       9     1508       7548              2848   0 SocketHeciServer
+    610      32    15456      26152              3888   0 spoolsv
+    544      32    43696      48496              8504   0 sqlceip
+    756      87   484304     134624              3204   0 sqlservr
+    155      10     2128       6384              4752   0 sqlwriter
+    633      31    28708      76544       2.52   3784  15 StartMenuExperienceHost
+    554      23    15408      23008              1072   0 svchost
+   2030      27    24396      43080              1136   0 svchost
+   1970      22    23268      24624              1308   0 svchost
+    493      13     3252       9772              1356   0 svchost
+    206      22     2108       6856              1468   0 svchost
+    226      16     2172      10444              1476   0 svchost
+    290      23     3452      11172              1484   0 svchost
+    112       9     1300       4052              1508   0 svchost
+    130       8     1688       5484              1572   0 svchost
+    254      13     2812       9028              1612   0 svchost
+   1382       9     3088      11052              1620   0 svchost
+    337      11     2808       7172              1756   0 svchost
+    142      10     1716       5192              1780   0 svchost
+    190       9     2212       6824              1792   0 svchost
+    483      14    17672      15828              1868   0 svchost
+    324      29     7760      15368              1920   0 svchost
+    202      11     1996       6892              1936   0 svchost
+    228      14     2440       8728              2056   0 svchost
+    176      31    12376      12832              2176   0 svchost
+    250      13     3464      13140              2276   0 svchost
+    276      13     4048      10352              2284   0 svchost
+    245      13     3364      13132              2304   0 svchost
+    406      17     8840      16456              2308   0 svchost
+    235      10     3168       6640              2424   0 svchost
+    427      11     3624      11380              2512   0 svchost
+    227      12     2992      13460              2532   0 svchost
+    261       7     1348       4620              2560   0 svchost
+    177       7     2568       4992              2668   0 svchost
+    241       9     2156       6880              2696   0 svchost
+    230      13     3916      12064              2704   0 svchost
+    406      16     6624      12376              2712   0 svchost
+    184      10     2428       7928              2752   0 svchost
+    232      12     2520       9200              2832   0 svchost
+    654      15     8796      11324              2972   0 svchost
+    194      12    15860      20944              2980   0 svchost
+    299      11     3652       8880              3112   0 svchost
+    132       8     1620       5244              3196   0 svchost
+    437      32    13436      17636              3260   0 svchost
+    483      15     4328      14144              3268   0 svchost
+    511      23     9184      36220       2.81   3296  15 svchost
+    191     107     2616       6992              3380   0 svchost
+    333      15     4752       8904              3452   0 svchost
+    392      15     3044       8608              3460   0 svchost
+    234      15     2656      10588              3468   0 svchost
+    387      23    42364      43544              3520   0 svchost
+    140       9     1460       5032              3560   0 svchost
+    198      10     2452       6956              3656   0 svchost
+    706      31    28564      37228              3680   0 svchost
+    526      21     8656      18220              3760   0 svchost
+    300      16     3412       8380              3812   0 svchost
+    254      17     2972      12192              3848   0 svchost
+    114       8     1260       4512              4076   0 svchost
+    497      18    17368      25496              4320   0 svchost
+    112       7     1288       5692              4340   0 svchost
+    206      11     2388       7920              4496   0 svchost
+    144       9     1600       4964              4672   0 svchost
+    117       8     1420       4148              4684   0 svchost
+    187      10     2168       7092              4764   0 svchost
+    145       7     1436       4328              4816   0 svchost
+    429      20     5852      21960              4948   0 svchost
+    370      17     3232       9512              5292   0 svchost
+    216      12     2416       6048              5476   0 svchost
+    411      27     3940      11712              6016   0 svchost
+    277      13     2912      12260              6216   0 svchost
+    166       9     1736       8420       0.38   6360  15 svchost
+    161      10     2224       6416              6920   0 svchost
+    283      15     4176      13340              7292   0 svchost
+   1123      13    12032      21664              8016   0 svchost
+    257       9     1932       7172              8068   0 svchost
+    405      24     5524      19492              8624   0 svchost
+    239      11     2652       7352              9168   0 svchost
+    238      13     3256      10488              9372   0 svchost
+   1482      22    18004      23672              9408   0 svchost
+    183      11     2316       8532              9500   0 svchost
+    321      17     7844      19188             10692   0 svchost
+    174      11     2344      10008             11868   0 svchost
+    400      21     8872      23388             11980   0 svchost
+    200      15     6816       9624             12320   0 svchost
+    176       9     1768       7672             12832   0 svchost
+    362      13     7516      12116             13516   0 svchost
+    504      35    52148      34684             13988   0 svchost
+    443      21     6140      28508             14276   0 svchost
+    578      27     7708      26512      14.27  14332  15 svchost
+    204      11     2704       9504             14364   0 svchost
+    184      11     2156       8364             15132   0 svchost
+    123       8     1304       5712             18364   0 svchost
+    392      18    11592      27464       9.95  20160  15 svchost
+    436      20     7572      30700       2.09  20804  15 svchost
+    296      24     8564      16208             21232   0 svchost
+   4712       0      196       1684                 4   0 System
+    866      44    29172       2012       1.53   7680  15 SystemSettings
+    321      40    10044      20192       1.77  10344  15 taskhostw
+    578      23    14044      48456       4.20  20856  15 TextInputHost
+    139       9    11296      11532              9120   0 unsecapp
+    126       8     1656       7740       0.05  17728  15 unsecapp
+    121       8     1632       7744       0.06  21440  15 unsecapp
+    149      11     2180      10008       0.06   2492  15 UserOOBEBroker
+   1717     155    71252     230216      25.56  13388  15 WhatsApp.Root
+    198      11     1880       5904               840   0 wininit
+    284      12     2688      10848             16392  15 winlogon
+    159       8     1768       7672             13848   0 wlanext
+    379      22    19732      17904              6324   0 WmiPrvSE
+    197      11     6308      13804              9488   0 WmiPrvSE
+    391      22     8252      19772       0.73  10964  15 WSHelper
+    471      21     6152      20120              5080   0 wslservice
+    364      16     8512      16220              1208   0 WUDFHost
+
+
+PS C:\Users\pc> Get-Alias mkdir
+Get-Alias : This command cannot find a matching alias because an alias with the
+name 'mkdir' does not exist.
+At line:1 char:1
++ Get-Alias mkdir
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mkdir:String) [Get-Alias], ItemNotFo
+   undException
+    + FullyQualifiedErrorId : ItemNotFoundException,Microsoft.PowerShell.Commands.G
+   etAliasCommand
+
+PS C:\Users\pc> Get-Alias ls
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           ls -> Get-ChildItem
+
+
+PS C:\Users\pc> Get-Alias ps
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           ps -> Get-Process
+
+
+PS C:\Users\pc> Set-Alias ayush Get-ChildItem
+PS C:\Users\pc> ayush
+
+
+    Directory: C:\Users\pc
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         28-Nov-25   6:11 PM                .anaconda
+d-----         12-Jun-26   1:49 PM                .android
+d-----         12-Mar-26   5:28 PM                .aws
+d-----         30-May-26  12:07 PM                .cagent
+d-----         22-May-26   3:36 PM                .codex
+d-----         28-Nov-25   6:11 PM                .conda
+d-----         30-May-26  12:07 PM                .config
+d-----         28-Nov-25   6:11 PM                .continuum
+d-----         24-Jul-26  10:04 AM                .copilot
+d-----         24-Jun-26  11:15 AM                .docker
+d-----         21-Jun-25   5:34 AM                .dotnet
+d-----         13-Oct-25  10:17 AM                .eclipse
+d-----         29-Dec-25   9:39 AM                .gradle
+d-----         06-Jul-26   9:56 AM                .idlerc
+d-----         06-Oct-25  10:13 AM                .ipython
+d-----         29-Jun-26   5:38 PM                .jdks
+d-----         06-Oct-25  10:30 AM                .jupyter
+d-----         15-Jun-26  10:37 AM                .kube
+d-----         13-Aug-25   4:03 PM                .m2
+d-----         08-Oct-25   6:30 PM                .matplotlib
+d-----         18-Jun-26   9:37 AM                .minikube
+d-----         19-Jun-25   3:18 PM                .ms-ad
+d-----         04-Jun-25   6:25 AM                .nuget
+d-----         30-Jan-26   2:38 PM                .openjfx
+d-----         13-Oct-25  10:24 AM                .p2
+d-----         27-Feb-26  12:31 PM                .redhat
+d-----         23-Apr-26   6:22 PM                .ssh
+d-----         21-Jun-25   5:29 AM                .templateengine
+d-----         20-Aug-25   5:22 PM                .th-client
+d-----         23-Jun-26   6:59 PM                .VirtualBox
+d-----         13-Oct-25  11:59 AM                .vscode
+d-----         31-Mar-26   6:54 PM                .vscode-R
+d-----         01-May-26   6:19 PM                .vscode-shared
+d-----         01-Apr-26   5:13 PM                .wdm
+d-r---         02-Jun-25   1:14 AM                3D Objects
+d-r---         02-Jun-25   1:14 AM                Contacts
+d-r---         12-Aug-26   2:49 PM                Desktop
+d-r---         22-Jul-26   5:47 PM                Documents
+d-r---         11-Aug-26   3:42 PM                Downloads
+d-----         13-Oct-25  10:17 AM                eclipse
+d-r---         02-Jan-26   1:06 PM                Favorites
+d-----         06-Aug-25   4:53 PM                IdeaProjects
+d-r---         02-Jun-25   1:14 AM                Links
+d-r---         02-Jun-25   1:14 AM                Music
+d-----         13-Jan-26   4:36 PM                nawazish
+d-----         06-Oct-25  10:25 AM                New Folder
+dar--l         07-Jun-25   4:18 PM                OneDrive
+d-r---         27-Jul-26   8:07 AM                Pictures
+d-r---         02-Jun-25   1:14 AM                Saved Games
+d-r---         02-Jun-25   1:15 AM                Searches
+d-----         02-Jun-25   1:06 PM                source
+d-----         26-Dec-25  12:51 PM                StudioProjects
+d-----         05-Nov-25   5:02 PM                Udit
+d-r---         30-Dec-25  12:21 PM                Videos
+d-----         23-Jun-26   6:59 PM                VirtualBox VMs
+-a----         12-Aug-26   6:06 PM          11512 .bash_history
+-a----         28-Nov-25   6:12 PM             25 .condarc
+-a----         29-Dec-25   9:31 AM             16 .emulator_console_auth_token
+-a----         10-Apr-26   6:43 PM            399 .gitconfig
+-a----         21-Aug-25   5:43 PM           2204 .h2.server.properties
+-a----         05-Jun-26   6:06 PM             20 .lesshst
+-a----         02-Jun-25   3:42 PM             14 .minttyrc
+-a----         03-Sep-25   2:38 PM             28 .node_repl_history
+-a----         29-Jun-26   9:39 AM            155 .python_history
+-a----         16-Apr-26  11:12 AM           8192 day1.db
+-a----         28-Nov-25  10:24 AM         460000 Service.json
+-a----         28-Nov-25  12:14 PM         163346 Service1.csv
+-a----         20-Aug-25   5:20 PM          20480 test.mv.db
+
+
+PS C:\Users\pc> get-service
+
+Status   Name               DisplayName
+------   ----               -----------
+Stopped  AarSvc_bbf73b8     Agent Activation Runtime_bbf73b8
+Running  AdobeARMservice    Adobe Acrobat Update Service
+Running  AESMService        Intel® SGX AESM
+Stopped  AJRouter           AllJoyn Router Service
+Stopped  ALG                Application Layer Gateway Service
+Running  AnyDesk            AnyDesk Service
+Stopped  AppIDSvc           Application Identity
+Running  Appinfo            Application Information
+Stopped  AppReadiness       App Readiness
+Stopped  AppXSvc            AppX Deployment Service (AppXSVC)
+Running  AudioEndpointBu... Windows Audio Endpoint Builder
+Running  Audiosrv           Windows Audio
+Stopped  autotimesvc        Cellular Time
+Stopped  AxInstSV           ActiveX Installer (AxInstSV)
+Running  AzureAttestService AzureAttestService
+Stopped  BcastDVRUserSer... GameDVR and Broadcast User Service_...
+Stopped  BDESVC             BitLocker Drive Encryption Service
+Running  BFE                Base Filtering Engine
+Stopped  BITS               Background Intelligent Transfer Ser...
+Running  BluetoothUserSe... Bluetooth User Support Service_bbf73b8
+Running  BrokerInfrastru... Background Tasks Infrastructure Ser...
+Running  BTAGService        Bluetooth Audio Gateway Service
+Running  BthAvctpSvc        AVCTP service
+Running  bthserv            Bluetooth Support Service
+Running  camsvc             Capability Access Manager Service
+Stopped  CaptureService_... CaptureService_bbf73b8
+Running  cbdhsvc_bbf73b8    Clipboard User Service_bbf73b8
+Running  CDPSvc             Connected Devices Platform Service
+Running  CDPUserSvc_bbf73b8 Connected Devices Platform User Ser...
+Stopped  CertPropSvc        Certificate Propagation
+Running  ClickToRunSvc      Microsoft Office Click-to-Run Service
+Stopped  ClipSVC            Client License Service (ClipSVC)
+Stopped  COMSysApp          COM+ System Application
+Stopped  ConsentUxUserSv... ConsentUX_bbf73b8
+Running  CoreMessagingRe... CoreMessaging
+Running  cplspcon           Intel(R) Content Protection HDCP Se...
+Stopped  CredentialEnrol... CredentialEnrollmentManagerUserSvc_...
+Running  CryptSvc           Cryptographic Services
+Running  DcomLaunch         DCOM Server Process Launcher
+Stopped  dcsvc              Declared Configuration(DC) service
+Stopped  defragsvc          Optimize drives
+Stopped  DeviceAssociati... DeviceAssociationBroker_bbf73b8
+Running  DeviceAssociati... Device Association Service
+Stopped  DeviceInstall      Device Install Service
+Stopped  DevicePickerUse... DevicePicker_bbf73b8
+Stopped  DevicesFlowUser... DevicesFlow_bbf73b8
+Stopped  DevQueryBroker     DevQuery Background Discovery Broker
+Running  Dhcp               DHCP Client
+Stopped  diagnosticshub.... Microsoft (R) Diagnostics Hub Stand...
+Stopped  diagsvc            Diagnostic Execution Service
+Running  DiagTrack          Connected User Experiences and Tele...
+Running  DispBrokerDeskt... Display Policy Service
+Running  DisplayEnhancem... Display Enhancement Service
+Stopped  DmEnrollmentSvc    Device Management Enrollment Service
+Stopped  dmwappushservice   Device Management Wireless Applicat...
+Running  Dnscache           DNS Client
+Running  DolbyDAXAPI        Dolby DAX API Service
+Running  DoSvc              Delivery Optimization
+Stopped  dot3svc            Wired AutoConfig
+Running  DPS                Diagnostic Policy Service
+Stopped  DsmSvc             Device Setup Manager
+Running  DsSvc              Data Sharing Service
+Running  DusmSvc            Data Usage
+Stopped  Eaphost            Extensible Authentication Protocol
+Stopped  edgeupdate         Microsoft Edge Update Service (edge...
+Stopped  edgeupdatem        Microsoft Edge Update Service (edge...
+Running  EFS                Encrypting File System (EFS)
+Stopped  embeddedmode       Embedded Mode
+Stopped  EntAppSvc          Enterprise App Management Service
+Running  esifsvc            Intel(R) Dynamic Tuning service
+Running  EventLog           Windows Event Log
+Running  EventSystem        COM+ Event System
+Stopped  Fax                Fax
+Stopped  fdPHost            Function Discovery Provider Host
+Stopped  FDResPub           Function Discovery Resource Publica...
+Stopped  fhsvc              File History Service
+Running  FMAPOService       Fortemedia APO Control Service
+Running  FontCache          Windows Font Cache Service
+Running  FrameServer        Windows Camera Frame Server
+Stopped  GameInputSvc       GameInput Service
+Stopped  GoogleChromeEle... Google Chrome Elevation Service (Go...
+Stopped  GoogleUpdaterIn... Google Updater Internal Service (Go...
+Stopped  GoogleUpdaterSe... Google Updater Service (GoogleUpdat...
+Stopped  gpsvc              Group Policy Client
+Stopped  GraphicsPerfSvc    GraphicsPerfSvc
+Running  hidserv            Human Interface Device Service
+Running  hns                Host Network Service
+Running  HPPrintScanDoct... HP Print Scan Doctor Service
+Running  HvHost             HV Host Service
+Stopped  icssvc             Windows Mobile Hotspot Service
+Running  igccservice        Intel(R) Graphics Command Center Se...
+Running  igfxCUIService2... Intel(R) HD Graphics Control Panel ...
+Stopped  IKEEXT             IKE and AuthIP IPsec Keying Modules
+Running  InstallService     Microsoft Store Install Service
+Running  Intel(R) Capabi... Intel(R) Capability Licensing Servi...
+Stopped  Intel(R) TPM Pr... Intel(R) TPM Provisioning Service
+Stopped  IntelAudioService  Intel(R) Audio Service
+Running  iphlpsvc           IP Helper
+Stopped  IpxlatCfgSvc       IP Translation Configuration Service
+Running  jhi_service        Intel(R) Dynamic Application Loader...
+Running  KeyIso             CNG Key Isolation
+Stopped  KtmRm              KtmRm for Distributed Transaction C...
+Running  LanmanServer       Server
+Running  LanmanWorkstation  Workstation
+Running  LenovoFnAndFunc... Lenovo Fn and function keys service
+Running  lfsvc              Geolocation Service
+Stopped  LibreOfficeMain... LibreOffice Maintenance Service
+Running  LicenseManager     Windows License Manager Service
+Running  LITSSVC            Lenovo Notebook ITS Service
+Stopped  lltdsvc            Link-Layer Topology Discovery Mapper
+Running  lmhosts            TCP/IP NetBIOS Helper
+Running  LMS                Intel(R) Management and Security Ap...
+Running  LSM                Local Session Manager
+Stopped  LxpSvc             Language Experience Service
+Stopped  LxssManager        LxssManager
+Stopped  LxssManagerUser... LxssManagerUser_bbf73b8
+Stopped  MapsBroker         Downloaded Maps Manager
+Stopped  McpManagementSe... McpManagementService
+Running  MDCoreSvc          Microsoft Defender Core Service
+Stopped  MessagingServic... MessagingService_bbf73b8
+Stopped  MicrosoftCopilo... Microsoft Copilot Elevation Service...
+Running  MicrosoftEdgeEl... Microsoft Edge Elevation Service (M...
+Stopped  MixedRealityOpe... Windows Mixed Reality OpenXR Service
+Running  MongoDB            MongoDB Server (MongoDB)
+Stopped  MozillaMaintenance Mozilla Maintenance Service
+Running  mpssvc             Windows Defender Firewall
+Stopped  MSDTC              Distributed Transaction Coordinator
+Stopped  MSiSCSI            Microsoft iSCSI Initiator Service
+Stopped  msiserver          Windows Installer
+Running  MSSQLSERVER        SQL Server (MSSQLSERVER)
+Running  MySQL80            MySQL80
+Stopped  NaturalAuthenti... Natural Authentication
+Stopped  NcaSvc             Network Connectivity Assistant
+Running  NcbService         Network Connection Broker
+Stopped  NcdAutoSetup       Network Connected Devices Auto-Setup
+Stopped  Netlogon           Netlogon
+Stopped  Netman             Network Connections
+Running  netprofm           Network List Service
+Stopped  NetSetupSvc        Network Setup Service
+Stopped  NetTcpPortSharing  Net.Tcp Port Sharing Service
+Running  NgcCtnrSvc         Microsoft Passport Container
+Running  NgcSvc             Microsoft Passport
+Running  NlaSvc             Network Location Awareness
+Running  nsi                Network Store Interface Service
+Running  nvagent            Network Virtualization Service
+Running  OneSyncSvc_bbf73b8 Sync Host_bbf73b8
+Stopped  ose64              Office 64 Source Engine
+Stopped  p2pimsvc           Peer Networking Identity Manager
+Stopped  p2psvc             Peer Networking Grouping
+Running  PcaSvc             Program Compatibility Assistant Ser...
+Stopped  perceptionsimul... Windows Perception Simulation Service
+Stopped  PerfHost           Performance Counter DLL Host
+Running  PhoneSvc           Phone Service
+Running  PimIndexMainten... Contact Data_bbf73b8
+Stopped  pla                Performance Logs & Alerts
+Running  PlugPlay           Plug and Play
+Stopped  PNRPAutoReg        PNRP Machine Name Publication Service
+Stopped  PNRPsvc            Peer Name Resolution Protocol
+Running  PolicyAgent        IPsec Policy Agent
+Running  Power              Power
+Stopped  PrintNotify        Printer Extensions and Notifications
+Stopped  PrintWorkflowUs... PrintWorkflow_bbf73b8
+Running  ProfSvc            User Profile Service
+Stopped  PushToInstall      Windows PushToInstall Service
+Running  QWAVE              Quality Windows Audio Video Experience
+Stopped  RasAuto            Remote Access Auto Connection Manager
+Running  RasMan             Remote Access Connection Manager
+Stopped  RemoteAccess       Routing and Remote Access
+Stopped  RemoteRegistry     Remote Registry
+Stopped  RetailDemo         Retail Demo Service
+Running  RmSvc              Radio Management Service
+Running  RpcEptMapper       RPC Endpoint Mapper
+Stopped  RpcLocator         Remote Procedure Call (RPC) Locator
+Running  RpcSs              Remote Procedure Call (RPC)
+Running  RstMwService       Intel(R) Storage Middleware Service
+Running  RtkAudioUnivers... Realtek Audio Universal Service
+Running  SamSs              Security Accounts Manager
+Stopped  SCardSvr           Smart Card
+Stopped  ScDeviceEnum       Smart Card Device Enumeration Service
+Running  Schedule           Task Scheduler
+Stopped  SCPolicySvc        Smart Card Removal Policy
+Stopped  SDRSVC             Windows Backup
+Running  seclogon           Secondary Logon
+Running  SecurityHealthS... Windows Security Service
+Running  SEMgrSvc           Payments and NFC/SE Manager
+Running  SENS               System Event Notification Service
+Stopped  SensorDataService  Sensor Data Service
+Stopped  SensorService      Sensor Service
+Stopped  SensrSvc           Sensor Monitoring Service
+Stopped  SessionEnv         Remote Desktop Configuration
+Running  SharedAccess       Internet Connection Sharing (ICS)
+Stopped  SharedRealitySvc   Spatial Data Service
+Running  ShellHWDetection   Shell Hardware Detection
+Stopped  shpamsvc           Shared PC Account Manager
+Stopped  smphost            Microsoft Storage Spaces SMP
+Stopped  SmsRouter          Microsoft Windows SMS Router Service.
+Stopped  SNMPTRAP           SNMP Trap
+Stopped  spectrum           Windows Perception Service
+Running  Spooler            Print Spooler
+Stopped  sppsvc             Software Protection
+Stopped  SQLBrowser         SQL Server Browser
+Stopped  SQLSERVERAGENT     SQL Server Agent (MSSQLSERVER)
+Running  SQLTELEMETRY       SQL Server CEIP service (MSSQLSERVER)
+Running  SQLWriter          SQL Server VSS Writer
+Running  SSDPSRV            SSDP Discovery
+Stopped  ssh-agent          OpenSSH Authentication Agent
+Running  SstpSvc            Secure Socket Tunneling Protocol Se...
+Running  StateRepository    State Repository Service
+Running  stisvc             Windows Image Acquisition (WIA)
+Running  StorSvc            Storage Service
+Stopped  svsvc              Spot Verifier
+Stopped  swprv              Microsoft Software Shadow Copy Prov...
+Running  SysMain            SysMain
+Running  SystemEventsBroker System Events Broker
+Running  TabletInputService Touch Keyboard and Handwriting Pane...
+Running  TapiSrv            Telephony
+Stopped  TermService        Remote Desktop Services
+Running  Themes             Themes
+Stopped  TieringEngineSe... Storage Tiers Management
+Running  TimeBrokerSvc      Time Broker
+Running  TokenBroker        Web Account Manager
+Running  TrkWks             Distributed Link Tracking Client
+Stopped  TroubleshootingSvc Recommended Troubleshooting Service
+Stopped  TrustedInstaller   Windows Modules Installer
+Stopped  tzautoupdate       Auto Time Zone Updater
+Stopped  UdkUserSvc_bbf73b8 Udk User Service_bbf73b8
+Stopped  uhssvc             Microsoft Update Health Service
+Stopped  UmRdpService       Remote Desktop Services UserMode Po...
+Running  UnistoreSvc_bbf... User Data Storage_bbf73b8
+Stopped  upnphost           UPnP Device Host
+Running  UserDataSvc_bbf... User Data Access_bbf73b8
+Running  UserManager        User Manager
+Running  UsoSvc             Update Orchestrator Service
+Stopped  VacSvc             Volumetric Audio Compositor Service
+Running  VaultSvc           Credential Manager
+Stopped  vds                Virtual Disk
+Stopped  vmcompute          Hyper-V Host Compute Service
+Stopped  vmicguestinterface Hyper-V Guest Service Interface
+Stopped  vmicheartbeat      Hyper-V Heartbeat Service
+Stopped  vmickvpexchange    Hyper-V Data Exchange Service
+Stopped  vmicrdv            Hyper-V Remote Desktop Virtualizati...
+Stopped  vmicshutdown       Hyper-V Guest Shutdown Service
+Stopped  vmictimesync       Hyper-V Time Synchronization Service
+Stopped  vmicvmsession      Hyper-V PowerShell Direct Service
+Stopped  vmicvss            Hyper-V Volume Shadow Copy Requestor
+Stopped  VSS                Volume Shadow Copy
+Stopped  W32Time            Windows Time
+Stopped  WaaSMedicSvc       Windows Update Medic Service
+Stopped  WalletService      WalletService
+Stopped  WarpJITSvc         WarpJITSvc
+Stopped  wbengine           Block Level Backup Engine Service
+Stopped  WbioSrvc           Windows Biometric Service
+Running  Wcmsvc             Windows Connection Manager
+Running  wcncsvc            Windows Connect Now - Config Registrar
+Running  WdiServiceHost     Diagnostic Service Host
+Stopped  WdiSystemHost      Diagnostic System Host
+Running  WdNisSvc           Microsoft Defender Antivirus Networ...
+Stopped  WebClient          WebClient
+Stopped  Wecsvc             Windows Event Collector
+Stopped  WEPHOSTSVC         Windows Encryption Provider Host Se...
+Stopped  wercplsupport      Problem Reports Control Panel Support
+Stopped  WerSvc             Windows Error Reporting Service
+Stopped  WFDSConMgrSvc      Wi-Fi Direct Services Connection Ma...
+Stopped  WiaRpc             Still Image Acquisition Events
+Running  WinDefend          Microsoft Defender Antivirus Service
+Running  WinHttpAutoProx... WinHTTP Web Proxy Auto-Discovery Se...
+Running  Winmgmt            Windows Management Instrumentation
+Stopped  WinRM              Windows Remote Management (WS-Manag...
+Stopped  wisvc              Windows Insider Service
+Running  WlanSvc            WLAN AutoConfig
+Running  wlidsvc            Microsoft Account Sign-in Assistant
+Stopped  wlpasvc            Local Profile Assistant Service
+Stopped  WManSvc            Windows Management Service
+Stopped  wmiApSrv           WMI Performance Adapter
+Stopped  WMPNetworkSvc      Windows Media Player Network Sharin...
+Stopped  workfolderssvc     Work Folders
+Stopped  WpcMonSvc          Parental Controls
+Stopped  WPDBusEnum         Portable Device Enumerator Service
+Running  WpnService         Windows Push Notifications System S...
+Running  WpnUserService_... Windows Push Notifications User Ser...
+Running  wscsvc             Security Center
+Running  WSearch            Windows Search
+Stopped  WslInstaller       Windows Subsystem for Linux
+Running  WSLService         WSL Service
+Stopped  wuauserv           Windows Update
+Stopped  WwanSvc            WWAN AutoConfig
+Stopped  XblAuthManager     Xbox Live Auth Manager
+Stopped  XblGameSave        Xbox Live Game Save
+Stopped  XboxGipSvc         Xbox Accessory Management Service
+Stopped  XboxNetApiSvc      Xbox Live Networking Service
+
+
+PS C:\Users\pc> Stop-Service -Name WSLService
+Stop-Service : Service 'WSL Service (WSLService)' cannot be stopped due to the
+following error: Cannot open WSLService service on computer '.'.
+At line:1 char:1
++ Stop-Service -Name WSLService
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (System.ServiceProcess.ServiceController:
+   ServiceController) [Stop-Service], ServiceCommandException
+    + FullyQualifiedErrorId : CouldNotStopService,Microsoft.PowerShell.Commands.Sto
+   pServiceCommand
+
+PS C:\Users\pc> Stop-Service -Name MYSQL80
+Stop-Service : Service 'MYSQL80 (MySQL80)' cannot be stopped due to the following
+error: Cannot open MySQL80 service on computer '.'.
+At line:1 char:1
++ Stop-Service -Name MYSQL80
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (System.ServiceProcess.ServiceController:
+   ServiceController) [Stop-Service], ServiceCommandException
+    + FullyQualifiedErrorId : CouldNotStopService,Microsoft.PowerShell.Commands.Sto
+   pServiceCommand
+
+PS C:\Users\pc> New-Item test.txt
+
+
+    Directory: C:\Users\pc
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         12-Aug-26   8:30 PM              0 test.txt
+
+
+PS C:\Users\pc> New-Item myFolder -ItemType -Directory
+New-Item : The type is not a known type for the file system. Only
+"file","directory" or "symboliclink" can be specified.
+At line:1 char:1
++ New-Item myFolder -ItemType -Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], PSArgumentException
+    + FullyQualifiedErrorId : Argument,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\pc> New-Item myFolder -ItemType Directory
+
+
+    Directory: C:\Users\pc
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         12-Aug-26   8:31 PM                myFolder
+
+
+PS C:\Users\pc> Set-Text test.txt "How i am good"
+Set-Text : The term 'Set-Text' is not recognized as the name of a cmdlet, function,
+script file, or operable program. Check the spelling of the name, or if a path was
+included, verify that the path is correct and try again.
+At line:1 char:1
++ Set-Text test.txt "How i am good"
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Set-Text:String) [], CommandNotFound
+   Exception
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\pc> Set-Content test.txt "How i am good"
+PS C:\Users\pc> cat test.txt
+How i am good
+PS C:\Users\pc> .\test.txt
+PS C:\Users\pc> Add-Content test.txt "Hello"
+PS C:\Users\pc> Add-Content test.txt "Nirmol"
+PS C:\Users\pc> .\test.txt
+PS C:\Users\pc> Set-Content test.txt "How i am good"
+PS C:\Users\pc> Set-Content test.txt "How i am good"
+PS C:\Users\pc> .\test.txt
+PS C:\Users\pc>
