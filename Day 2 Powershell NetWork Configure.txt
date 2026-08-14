@@ -1,0 +1,418 @@
+pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> New-Item merge.txt
+
+
+    Directory: C:\Users\pc\Desktop\Nirmol
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         14-Aug-26   8:10 PM              0 merge.txt
+
+
+PS C:\Users\pc\Desktop\Nirmol> ls
+
+
+    Directory: C:\Users\pc\Desktop\Nirmol
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         14-Aug-26   8:10 PM              0 merge.txt
+-a----         14-Aug-26   8:04 PM             15 rohan.txt
+-a----         14-Aug-26   8:09 PM       41145498 shiva.txt
+-a----         14-Aug-26   7:39 PM             13 test.txt
+
+
+PS C:\Users\pc\Desktop\Nirmol> Remove-Item .\shiva.txt
+PS C:\Users\pc\Desktop\Nirmol> ls
+
+
+    Directory: C:\Users\pc\Desktop\Nirmol
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         14-Aug-26   8:06 PM             58 both.txt
+-a----         14-Aug-26   8:10 PM              0 merge.txt
+-a----         14-Aug-26   8:04 PM             15 rohan.txt
+-a----         14-Aug-26   7:39 PM             13 test.txt
+
+
+PS C:\Users\pc\Desktop\Nirmol> Get-Content *.txt -Excelude |Get-Content| Set-Content merged.txt
+Get-Content : A parameter cannot be found that matches parameter name 'Excelude'.
+At line:1 char:19
++ Get-Content *.txt -Excelude |Get-Content| Set-Content merged.txt
++                   ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Content], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+t
+Get-Content : Missing an argument for parameter 'Exclude'. Specify a parameter of type 'System.String[]' and try again.
+At line:1 char:19
++ Get-Content *.txt -Exclude |Get-Content| Set-Content merged.txt
++                   ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Content], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\Users\pc\Desktop\Nirmol> Get-Content *.txt -Exclude merge.txt |Get-Content| Set-Content merge.txt  PS C:\Users\pc\Desktop\Nirmol> ls
+
+
+    Directory: C:\Users\pc\Desktop\Nirmol
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         14-Aug-26   8:06 PM             58 both.txt
+-a----         14-Aug-26   8:13 PM             84 merge.txt
+-a----         14-Aug-26   8:04 PM             15 rohan.txt
+-a----         14-Aug-26   7:39 PM             13 test.txt
+
+
+PS C:\Users\pc\Desktop\Nirmol> cat .\merge.txt
+Hello Ayush
+Rohan is good
+Hello Ayush
+Rohan is good
+Hello Ayush
+PS C:\Users\pc\Desktop\Nirmol> cat .\test.txt^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> Get-Content *.txt | Out-File shiva.txt^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ipconfig
+
+Windows IP Configuration
+
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   IPv6 Address. . . . . . . . . . . : 2405:201:6813:709a:b42c:ca6c:505f:528c
+   Temporary IPv6 Address. . . . . . : 2405:201:6813:709a:6874:a81a:37f5:85f6
+   Link-local IPv6 Address . . . . . : fe80::c46b:6995:57d0:c291%8
+   IPv4 Address. . . . . . . . . . . : 192.168.29.109
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::ae10:7ff:fea3:2143%8
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+PS C:\Users\pc\Desktop\Nirmol> ipconfig
+
+Windows IP Configuration
+
+
+Wireless LAN adapter Local Area Connection* 1:
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+
+   Connection-specific DNS Suffix  . :
+   IPv6 Address. . . . . . . . . . . : 2405:201:6813:709a:b42c:ca6c:505f:528c
+   Temporary IPv6 Address. . . . . . : 2405:201:6813:709a:6874:a81a:37f5:85f6
+   Link-local IPv6 Address . . . . . : fe80::c46b:6995:57d0:c291%8
+   IPv4 Address. . . . . . . . . . . : 192.168.29.109
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::ae10:7ff:fea3:2143%8
+                                       192.168.29.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+PS C:\Users\pc\Desktop\Nirmol> ping  192.168.29.1
+
+Pinging 192.168.29.1 with 32 bytes of data:
+Reply from 192.168.29.1: bytes=32 time=1ms TTL=64
+Reply from 192.168.29.1: bytes=32 time=7ms TTL=64
+Reply from 192.168.29.1: bytes=32 time=1ms TTL=64
+Reply from 192.168.29.1: bytes=32 time=1ms TTL=64
+
+Ping statistics for 192.168.29.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 1ms, Maximum = 7ms, Average = 2ms
+PS C:\Users\pc\Desktop\Nirmol> ping 8.8.8.8
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=64ms TTL=112
+Reply from 8.8.8.8: bytes=32 time=22ms TTL=112
+Reply from 8.8.8.8: bytes=32 time=19ms TTL=112
+Reply from 8.8.8.8: bytes=32 time=16ms TTL=112
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 16ms, Maximum = 64ms, Average = 30ms
+PS C:\Users\pc\Desktop\Nirmol> nslookup www.aajtak.com
+Server:  reliance.reliance
+Address:  2405:201:6813:709a::c0a8:1d01
+
+Non-authoritative answer:
+Name:    www.aajtak.com
+Addresses:  13.228.81.119
+          13.228.194.85
+
+PS C:\Users\pc\Desktop\Nirmol> Get-NetIPAddress
+
+
+IPAddress         : fe80::50ed:4c55:15bf:dc37%4
+InterfaceIndex    : 4
+InterfaceAlias    : Bluetooth Network Connection
+AddressFamily     : IPv6
+Type              : Unicast
+PrefixLength      : 64
+PrefixOrigin      : WellKnown
+SuffixOrigin      : Link
+AddressState      : Deprecated
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : fe80::4d24:3ce5:26d5:f66%13
+InterfaceIndex    : 13
+InterfaceAlias    : Local Area Connection* 2
+AddressFamily     : IPv6
+Type              : Unicast
+PrefixLength      : 64
+PrefixOrigin      : WellKnown
+SuffixOrigin      : Link
+AddressState      : Deprecated
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : fe80::166a:deb3:6542:7833%12
+InterfaceIndex    : 12
+InterfaceAlias    : Local Area Connection* 1
+AddressFamily     : IPv6
+Type              : Unicast
+PrefixLength      : 64
+PrefixOrigin      : WellKnown
+SuffixOrigin      : Link
+AddressState      : Deprecated
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : fe80::c46b:6995:57d0:c291%8
+InterfaceIndex    : 8
+InterfaceAlias    : Wi-Fi
+AddressFamily     : IPv6
+Type              : Unicast
+PrefixLength      : 64
+PrefixOrigin      : WellKnown
+SuffixOrigin      : Link
+AddressState      : Preferred
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 2405:201:6813:709a:b42c:ca6c:505f:528c
+InterfaceIndex    : 8
+InterfaceAlias    : Wi-Fi
+AddressFamily     : IPv6
+Type              : Unicast
+PrefixLength      : 64
+PrefixOrigin      : RouterAdvertisement
+SuffixOrigin      : Link
+AddressState      : Preferred
+ValidLifetime     : 00:59:58
+PreferredLifetime : 00:59:58
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 2405:201:6813:709a:6874:a81a:37f5:85f6
+InterfaceIndex    : 8
+InterfaceAlias    : Wi-Fi
+AddressFamily     : IPv6
+Type              : Unicast
+PrefixLength      : 128
+PrefixOrigin      : RouterAdvertisement
+SuffixOrigin      : Random
+AddressState      : Preferred
+ValidLifetime     : 00:59:58
+PreferredLifetime : 00:59:58
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : ::1
+InterfaceIndex    : 1
+InterfaceAlias    : Loopback Pseudo-Interface 1
+AddressFamily     : IPv6
+Type              : Unicast
+PrefixLength      : 128
+PrefixOrigin      : WellKnown
+SuffixOrigin      : WellKnown
+AddressState      : Preferred
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 169.254.193.17
+InterfaceIndex    : 4
+InterfaceAlias    : Bluetooth Network Connection
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 16
+PrefixOrigin      : WellKnown
+SuffixOrigin      : Link
+AddressState      : Tentative
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 169.254.160.209
+InterfaceIndex    : 13
+InterfaceAlias    : Local Area Connection* 2
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 16
+PrefixOrigin      : WellKnown
+SuffixOrigin      : Link
+AddressState      : Tentative
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 169.254.231.231
+InterfaceIndex    : 12
+InterfaceAlias    : Local Area Connection* 1
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 16
+PrefixOrigin      : WellKnown
+SuffixOrigin      : Link
+AddressState      : Tentative
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 192.168.29.109
+InterfaceIndex    : 8
+InterfaceAlias    : Wi-Fi
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Dhcp
+SuffixOrigin      : Dhcp
+AddressState      : Preferred
+ValidLifetime     : 21:21:32
+PreferredLifetime : 21:21:32
+PolicyStore       : ActiveStore
+
+IPAddress         : 127.0.0.1
+InterfaceIndex    : 1
+InterfaceAlias    : Loopback Pseudo-Interface 1
+AddressFamily     : IPv4
+PrefixLength      : 8
+PrefixOrigin      : WellKnown
+SuffixOrigin      : WellKnown
+AddressState      : Preferred
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+
+
+PS C:\Users\pc\Desktop\Nirmol> Get-NetIPConfiguration
+
+
+InterfaceAlias       : Wi-Fi
+InterfaceIndex       : 8
+InterfaceDescription : Intel(R) Wireless-AC 9560
+NetProfile.Name      : JioFiber-D0s32
+IPv6Address          : 2405:201:6813:709a:b42c:ca6c:505f:528c
+IPv4Address          : 192.168.29.109
+IPv6DefaultGateway   : fe80::ae10:7ff:fea3:2143
+DNSServer            : 2405:201:6813:709a::c0a8:1d01
+                       192.168.29.1
+
+InterfaceAlias       : Bluetooth Network Connection
+InterfaceDescription : Bluetooth Device (Personal Area Network)
+NetAdapter.Status    : Disconnected
+
+
+
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> ^C
+PS C:\Users\pc\Desktop\Nirmol> tracert www.google.com
+
+Tracing route to www.google.com [2001:4860:4828:7700::]
+over a maximum of 30 hops:
+
+  1   116 ms     7 ms     7 ms  2405:201:6813:709a:ae10:7ff:fea3:2143
+  2     *        *
+PS C:\Users\pc\Desktop\Nirmol> Resolve-DnsName www.google.com
+
+Name                                           Type   TTL   Section    IPAddress
+----                                           ----   ---   -------    ---------
+www.google.com                                 AAAA   104   Answer     2001:4860:482c:7700::
+www.google.com                                 AAAA   104   Answer     2001:4860:4829:7700::
+www.google.com                                 AAAA   104   Answer     2001:4860:4826:7700::
+www.google.com                                 AAAA   104   Answer     2001:4860:482a:7700::
+www.google.com                                 AAAA   104   Answer     2001:4860:482b:7700::
+www.google.com                                 AAAA   104   Answer     2001:4860:4827:7700::
+www.google.com                                 AAAA   104   Answer     2001:4860:482d:7700::
+www.google.com                                 AAAA   104   Answer     2001:4860:4828:7700::
+www.google.com                                 A      268   Answer     142.251.155.119
+www.google.com                                 A      268   Answer     142.251.153.119
+www.google.com                                 A      268   Answer     142.251.157.119
+www.google.com                                 A      268   Answer     142.251.151.119
+www.google.com                                 A      268   Answer     142.251.150.119
+www.google.com                                 A      268   Answer     142.251.156.119
+www.google.com                                 A      268   Answer     142.251.154.119
+www.google.com                                 A      268   Answer     142.251.152.119
+
+
+PS C:\Users\pc\Desktop\Nirmol> Get-Date
+
+Friday, 14 August, 2026 8:44:54 PM
+
+
+PS C:\Users\pc\Desktop\Nirmol> Get-TimeZone
+
+
+Id                         : India Standard Time
+DisplayName                : (UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi
+StandardName               : India Standard Time
+DaylightName               : India Daylight Time
+BaseUtcOffset              : 05:30:00
+SupportsDaylightSavingTime : False
