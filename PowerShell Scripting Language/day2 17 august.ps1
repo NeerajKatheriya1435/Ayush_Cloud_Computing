@@ -79,3 +79,14 @@ $str1 = "Ayush Kumar"
 
 
 # Write-Host "Bitwise AND: " ($a -band $b)
+
+# $a="Hello";
+# $b="Hii";
+# $str1= $a+" "+$b+" "+$a;
+# Write-Host $str1
+
+# $str1 = "hello"
+# $str2 = "goodevening"
+
+# $str3 = $str1+" "+" "+$str2
+# Write-Host $str3
