@@ -28,14 +28,14 @@
 #     Write-Host "You are Overaged"
 # }
 
-$value=18
+# $value=18
 
-switch ($value) {
-    1 { Write-Host "Sunday" }
-    2 { Write-Host "Monday" }
-    3 { Write-Host "Tuesday" }
-    Default { Write-Host "Please Input value between 1 to 3"}
-}
+# switch ($value) {
+#     1 { Write-Host "Sunday" }
+#     2 { Write-Host "Monday" }
+#     3 { Write-Host "Tuesday" }
+#     Default { Write-Host "Please Input value between 1 to 3"}
+# }
 
 # $marks = 85
 # switch ($marks) {
