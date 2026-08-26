@@ -22,6 +22,7 @@
 # } until ($y -gt 3)
 
 # $arr=@(4,5,7,3,2,8);
+
 # $arr+=56
 # $arr+="Rohan"
 
@@ -30,8 +31,31 @@
 # Write-Host ($arr[1]+4)
 
 # foreach($item in $arr){
-#     Write-Host ($item+5)
+#     # Write-Host ($item+5)
+#     # Write-Host "Changes Made"
+#     if($item%2 -eq 0){
+#         Write-Host $item
+#     }
 # }
+
+# for ($i = 1; $i -lt 11; $i++) {
+#     if($i%2 -eq 0){
+#         Write-Host $i
+#     }
+# }
+
+# $arr=@(4,5,7,3,2,8);
+
+# for ($i = 0; $i -lt $arr.Length; $i++) {
+#     if($arr[$i]%2 -eq 0){
+#         Write-Host $arr[$i];
+#     }
+# }
+
+# Write-Host $arr
+
+# Write-Host $arr[4]
+
 
 # $arr=@{name="Rohan";age=56;salary=67000}
 
