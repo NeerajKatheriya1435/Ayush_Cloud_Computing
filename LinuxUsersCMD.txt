@@ -1,0 +1,176 @@
+┌──(kali㉿kali)-[/home/kali]
+└─PS> sudo useradd -m rohit 
+[sudo] password for kali: 
+
+┌──(kali㉿kali)-[/home/kali]
+└─PS> sudo passwd rohit    
+New password: 
+Retype new password: 
+passwd: password updated successfully
+
+┌──(kali㉿kali)-[/home/kali]
+└─PS> cd ..          
+
+┌──(kali㉿kali)-[/home]
+└─PS> ls
+kali  rohit
+
+┌──(kali㉿kali)-[/home]
+└─PS> su rohit         
+Password: 
+$ ls
+kali  rohit
+$ cd rohit
+$ ls
+$ mkdir shiva
+$ ls
+shiva
+$ echo simple text something test.txt 
+simple text something test.txt
+$ cat te
+cat: te: No such file or directory
+$ cat test.txt
+cat: test.txt: No such file or directory
+$ ls
+shiva
+$ echo Simple text something > test.txt
+$ cat tes
+cat: tes: No such file or directory
+$ cat test.txt
+Simple text something
+$ ls
+shiva  test.txt
+$ apt update
+Error: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+Error: Unable to lock directory /var/lib/apt/lists/
+Warning: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)
+Warning: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
+$ sudo apt update
+[sudo] password for rohit: 
+rohit is not in the sudoers file.
+$ su kali
+Password: 
+┌──(kali㉿kali)-[/home/rohit]
+└─$ apt update
+Error: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+Error: Unable to lock directory /var/lib/apt/lists/
+Warning: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)
+Warning: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
+                                                              
+┌──(kali㉿kali)-[/home/rohit]
+└─$ sudo apt update
+Get:1 http://kali.download/kali kali-rolling InRelease [34.0 kB]
+Get:2 http://kali.download/kali kali-rolling/main amd64 Packages [21.5 MB]
+Get:3 http://kali.download/kali kali-rolling/main amd64 Contents (deb) [53.5 MB]
+Get:4 http://kali.download/kali kali-rolling/contrib amd64 Packages [113 kB]
+Get:5 http://kali.download/kali kali-rolling/contrib amd64 Contents (deb) [261 kB]
+Get:6 http://kali.download/kali kali-rolling/non-free amd64 Packages [183 kB]
+Fetched 75.5 MB in 58s (1,297 kB/s)                          
+1232 packages can be upgraded. Run 'apt list --upgradable' to see them.
+                                                              
+┌──(kali㉿kali)-[/home/rohit]
+└─$ ls
+ls: cannot open directory '.': Permission denied
+                                                              
+┌──(kali㉿kali)-[/home/rohit]
+└─$ cd ..
+                                                              
+┌──(kali㉿kali)-[/home]
+└─$ cd kali 
+                                                              
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop    Downloads  Pictures  Public  shiva      Videos
+Documents  Music      Projects  rohan   Templates
+                                                              
+┌──(kali㉿kali)-[~]
+└─$ cd rohan 
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls
+ayush.txt  echonew.txt  neeraj.txt  newFile.txt
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l
+total 16
+-rw-rw-r-- 1 kali kali  17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali  11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali 122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali  68 Sep  5 10:04 newFile.txt
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ chmod g-w ayush.txt 
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l              
+total 16
+-rw-r--r-- 1 kali kali  17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali  11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali 122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali  68 Sep  5 10:04 newFile.txt
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ chmod 644 ayush.txt 
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l
+total 16
+-rw-r--r-- 1 kali kali  17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali  11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali 122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali  68 Sep  5 10:04 newFile.txt
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ chmod 664 ayush.txt
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l
+total 16
+-rw-rw-r-- 1 kali kali  17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali  11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali 122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali  68 Sep  5 10:04 newFile.txt
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l
+total 16
+-rw-rw-r-- 1 kali kali  17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali  11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali 122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali  68 Sep  5 10:04 newFile.txt
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ chmod u+w ayush.txt 
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l
+total 16
+-rw-rw-r-- 1 kali kali  17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali  11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali 122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali  68 Sep  5 10:04 newFile.txt
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ chmod g-w ayush.txt
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l
+total 16
+-rw-r--r-- 1 kali kali  17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali  11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali 122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali  68 Sep  5 10:04 newFile.txt
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ chmod 466 ayush.txt 
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l
+total 16
+-r--rw-rw- 1 kali kali  17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali  11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali 122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali  68 Sep  5 10:04 newFile.txt
+                                                              
+┌──(kali㉿kali)-[~/rohan]
+└─$
