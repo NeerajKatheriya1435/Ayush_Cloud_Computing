@@ -1,0 +1,269 @@
+┌──(kali㉿kali)-[/home/kali]
+└─PS> apt update
+Error: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+Error: Unable to lock directory /var/lib/apt/lists/
+Warning: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)
+Warning: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
+
+┌──(kali㉿kali)-[/home/kali]
+└─PS> sudo !!          
+[sudo] password for kali: 
+sudo: !!: command not found
+
+┌──(kali㉿kali)-[/home/kali]
+└─PS> sudo su        
+┌──(root㉿kali)-[/home/kali]
+└─# apt update
+0% [Working]^C          
+                                                                          
+┌──(root㉿kali)-[/home/kali]
+└─# su kali
+┌──(kali㉿kali)-[~]
+└─$ apt update
+Error: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+Error: Unable to lock directory /var/lib/apt/lists/
+Warning: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)
+Warning: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
+                                                                          
+┌──(kali㉿kali)-[~]
+└─$ sudo apt update
+[sudo] password for kali: 
+0% [Connecting to kali.download]^C
+                                                                          
+┌──(kali㉿kali)-[~]
+└─$ cd ..
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ ls
+ayush  john  kali  rohit
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ getent group sudo
+sudo:x:27:kali,rohan,ayush
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ ls
+ayush  john  kali  rohit
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ cd ./usr/bin
+cd: no such file or directory: ./usr/bin
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ cd /        
+                                                                          
+┌──(kali㉿kali)-[/]
+└─$ ls
+bin   home            lib32       mnt   run   tmp      vmlinuz.old
+boot  initrd.img      lib64       opt   sbin  usr
+dev   initrd.img.old  lost+found  proc  srv   var
+etc   lib             media       root  sys   vmlinuz
+                                                                          
+┌──(kali㉿kali)-[/]
+└─$ cd usr
+                                                                          
+┌──(kali㉿kali)-[/usr]
+└─$ ls
+bin    i686-w64-mingw32  lib    lib64    local  share  x86_64-w64-mingw32
+games  include           lib32  libexec  sbin   src
+                                                                          
+┌──(kali㉿kali)-[/usr]
+└─$ cd bin
+                                                                          
+┌──(kali㉿kali)-[/usr/bin]
+└─$ ls
+
+apt
+
+                                                                          
+┌──(kali㉿kali)-[/usr/bin]
+└─$ cd /   
+                                                                          
+┌──(kali㉿kali)-[/]
+└─$ cd ./home 
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ ls
+ayush  john  kali  nirmol  rohit
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ su nirmol             
+Password: 
+su: Authentication failure
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ sudo passwd nirmol    
+New password: 
+Retype new password: 
+passwd: password updated successfully
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ su nirmol         
+Password: 
+$ ls
+ayush  john  kali  nirmol  rohit
+$ mkdir newFile
+mkdir: cannot create directory ‘newFile’: Permission denied
+$ cd nirmol     
+$ ls
+$ mkdir newFile
+$ ls
+newFile
+$ apt update
+Error: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+Error: Unable to lock directory /var/lib/apt/lists/
+Warning: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)
+Warning: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
+$ sudo apt update
+[sudo] password for nirmol: 
+nirmol is not in the sudoers file.
+$ su kali
+Password: 
+su: Authentication failure
+$ su kali 
+Password: 
+┌──(kali㉿kali)-[/home/nirmol]
+└─$ sudo groupadd hrteam
+                                                                          
+┌──(kali㉿kali)-[/home/nirmol]
+└─$ sudo usermod -aG hrteam nirmol  
+                                                                          
+┌──(kali㉿kali)-[/home/nirmol]
+└─$ su nirmol                     
+Password: 
+$ sudo apt update
+[sudo] password for nirmol: 
+nirmol is not in the sudoers file.
+$ su kali
+Password: 
+┌──(kali㉿kali)-[/home/nirmol]
+└─$ sudo visudo
+                                                                          
+┌──(kali㉿kali)-[/home/nirmol]
+└─$ su nirmol  
+Password: 
+$ sudo apt update
+[sudo] password for nirmol: 
+Get:1 http://kali.download/kali kali-rolling InRelease [34.0 kB]
+Get:2 http://kali.download/kali kali-rolling/main amd64 Packages [21.5 MB]
+25% [2 Packages 7,890 kB/21.5 MB 37%]^C
+$ su kali
+Password: 
+┌──(kali㉿kali)-[/home/nirmol]
+└─$ sudo su
+┌──(root㉿kali)-[/home/nirmol]
+└─# apt upadte
+Error: Invalid operation upadte
+                                                                          
+┌──(root㉿kali)-[/home/nirmol]
+└─# apt update
+0% [Working]^C
+                                                                          
+┌──(root㉿kali)-[/home/nirmol]
+└─# su kali
+┌──(kali㉿kali)-[/home/nirmol]
+└─$ cd ..
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ ls   
+ayush  john  kali  nirmol  rohit
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ cd ayush
+cd: permission denied: ayush
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ ls
+ayush  john  kali  nirmol  rohit
+                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ cd kali 
+                                                                          
+┌──(kali㉿kali)-[~]
+└─$ s
+s: command not found
+                                                                          
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop    Downloads  Pictures  Public  shiva      Videos
+Documents  Music      Projects  rohan   Templates
+                                                                          
+┌──(kali㉿kali)-[~]
+└─$ cd rohan 
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls
+ayush.txt  echonew.txt  linuxCMD1.txt  neeraj.txt  newFile.txt
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l
+total 24
+-r--rw-rw- 1 kali kali   17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali   11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali 6739 Sep  7 11:12 linuxCMD1.txt
+-rw-rw-r-- 1 kali kali  122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali   68 Sep  5 10:04 newFile.txt
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ chmod o+w ayush.txt 
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l
+total 24
+-r--rw-rw- 1 kali kali   17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali   11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali 6739 Sep  7 11:12 linuxCMD1.txt
+-rw-rw-r-- 1 kali kali  122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali   68 Sep  5 10:04 newFile.txt
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ chmod 763 ayush.txt 
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l
+total 24
+-rwxrw--wx 1 kali kali   17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali   11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali 6739 Sep  7 11:12 linuxCMD1.txt
+-rw-rw-r-- 1 kali kali  122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali   68 Sep  5 10:04 newFile.txt
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ chown owner john ayush.txt 
+chown: invalid user: ‘owner’
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ sudo chown owner john ayush.txt 
+[sudo] password for kali: 
+chown: invalid user: ‘owner’
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ chown john ayush.txt       
+chown: changing ownership of 'ayush.txt': Operation not permitted
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ sudo chown john ayush.txt
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l
+total 24
+-rwxrw--wx 1 john kali   17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali   11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali 6739 Sep  7 11:12 linuxCMD1.txt
+-rw-rw-r-- 1 kali kali  122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali   68 Sep  5 10:04 newFile.txt
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ sudo chown john:programmer ayush.txt
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ ls -l
+total 24
+-rwxrw--wx 1 john programmer   17 Sep  5 10:01 ayush.txt
+-rw-rw-r-- 1 kali kali         11 Sep  5 10:22 echonew.txt
+-rw-rw-r-- 1 kali kali       6739 Sep  7 11:12 linuxCMD1.txt
+-rw-rw-r-- 1 kali kali        122 Sep  5 10:14 neeraj.txt
+-rw-rw-r-- 1 kali kali         68 Sep  5 10:04 newFile.txt
+                                                                          
+┌──(kali㉿kali)-[~/rohan]
+└─$ 
